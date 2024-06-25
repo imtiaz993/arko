@@ -1,0 +1,127 @@
+.card-column {
+    width: 50%;
+    float: left;
+    padding: 8%;
+    box-sizing: border-box;
+    margin-top: 5vh;
+}
+
+.column-1 {
+    /*padding-top: 150px;*/
+}
+
+.column-2 {
+    /*padding-top: 225px;*/
+}
+
+.card {
+    width: 100%;
+    max-width: 340px;
+    position: relative;
+    margin: auto;
+    background: #f2f2f2;
+    color: #000;
+    /*cursor: pointer;*/
+    margin-bottom: 10vmin;
+    box-shadow: 0 20px 20px rgba(0,0,0,.5);
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* PIECE OF TAPE */
+.card:before {
+    content: " ";
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    width: 100px;
+    height: 30px;
+}
+
+.card:before {
+    margin-top: -12px;
+    margin-left: -45px;
+    -webkit-transform: rotate(-25deg);
+    -moz-transform: rotate(-25deg);
+    -o-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+}
+
+
+/* TACK
+.card:before {
+    content: "";
+    display: block;
+    background-image: url("img/tack.webp");
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+    background-size: cover;
+    background-position: right;
+}
+
+.card:before {
+    margin-top: -17px;
+    margin-left: -20px;
+}
+ */
+
+/* Hanging Picture Frame
+.border {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    padding: 6px;
+    border: 2px solid #000;
+    opacity: 0.5;
+    left: 28%;
+    top: -30px;
+    rotate: 45deg;
+    z-index: -1;
+}
+ */
+
+.card h1 {
+    position: relative;
+    padding: 130% 0px 15px 0px;
+    width: 100%;
+    font-size: .5vmax;
+    font-weight: normal;
+    /*-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;*/
+}
+
+.card > img {
+    width: 92%;
+    height: 80%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 4%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .card-column {
+        width: 90%;
+    }
+
+    .card {
+        margin-left: 10%;
+    }
+
+    .column-1 {
+        padding-top: 0px;
+    }
+    .column-2 {
+        padding-top: 0px;
+    }
+
+    .open-content img {
+        margin-top: 40px;
+    }
+
+}
