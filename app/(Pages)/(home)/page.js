@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "../../../public/css/style.css";
 import "../../../public/css/books.css";
 import "../../../public/css/colorFan.css";
@@ -17,12 +18,12 @@ const Home = () => {
     <div>
       <div
         id="home"
-        className"top-containers scrollFade"
+        className="top-containers scrollFade"
         style="overflow-x: hidden"
       >
         <div>
           <div id="fix">
-            <div className"topper-logo">
+            <div className="topper-logo">
               <img
                 loading="lazy"
                 src="/img/Circle_Logo.png"
@@ -39,15 +40,15 @@ const Home = () => {
             </div>
           </div>
 
-          <div className"top-pic">
+          <div className="top-pic">
             <img
               loading="lazy"
-              className"top-pic-image"
+              className="top-pic-image"
               src="/img/hero_image.jpeg"
               alt="crane"
             />
           </div>
-          <h2 className"topper-slogan">
+          <h2 className="topper-slogan">
             We strategically integrate our expertise in construction and project
             management to offer seamless solutions.
           </h2>
@@ -61,8 +62,8 @@ const Home = () => {
         >
           ARKCO
         </h1>
-        <div id="about" className"flex-container">
-          <div className"flex-item-left scrollFade" style="flex: 30%">
+        <div id="about" className="flex-container">
+          <div className="flex-item-left scrollFade" style="flex: 30%">
             <div id="about-header-desktop" style="position: relative;">
               <div style="transform: rotate(-90deg);">
                 <h1 style="font-size: 5vmax">ABOUT US</h1>
@@ -99,24 +100,24 @@ const Home = () => {
             </div>
           </div>
           <div
-            className"flex-item-right scrollFade flex-container"
+            className="flex-item-right scrollFade flex-container"
             style="flex: 70%; padding-bottom: 10vh"
           >
-            <div className"service-box" style="flex: 60%">
-              <div className"service-card" id="servicecard1">
+            <div className="service-box" style="flex: 60%">
+              <div className="service-card" id="servicecard1">
                 <h1 style="position: absolute; left: 0; right: 0; margin: auto; z-index: 10; color: black">
                   ARKCO
                 </h1>
-                <div className"imgBox">
+                <div className="imgBox">
                   <img loading="lazy" src="/img/about.png" alt="some image" />
                 </div>
-                <div className"details">
+                <div className="details">
                   <h2>
                     Who We Are
                     <br />
                   </h2>
                 </div>
-                <div className"inside-content">
+                <div className="inside-content">
                   <p>
                     ArkCo aims to elevate the construction project management
                     experience. Recognizing the notorious complexity and
@@ -132,14 +133,14 @@ const Home = () => {
               </div>
             </div>
 
-            <div className"container" style="flex: 40%">
-              <div className"card-column column-0">
+            <div className="container" style="flex: 40%">
+              <div className="card-column column-0">
                 <div
                   onclick="window.location.href = '/allen'"
                   style="cursor: pointer"
-                  className"card card-color-0"
+                  className="card card-color-0"
                 >
-                  <div className"border"></div>
+                  <div className="border"></div>
                   <img
                     loading="lazy"
                     src="/img/allen_azarkian.png"
@@ -150,9 +151,9 @@ const Home = () => {
                   </h1>
                 </div>
               </div>
-              <div className"card-column column-1">
-                <div className"card card-color-1">
-                  <div className"border"></div>
+              <div className="card-column column-1">
+                <div className="card card-color-1">
+                  <div className="border"></div>
                   <img
                     loading="lazy"
                     src="https://www.aapc.nyc/img/pierre.png"
@@ -162,8 +163,8 @@ const Home = () => {
                     <b>Pierre Tairouz</b> <br /> Design Team Director
                   </h1>
                 </div>
-                <div className"card card-color-1">
-                  <div className"border"></div>
+                <div className="card card-color-1">
+                  <div className="border"></div>
                   <img loading="lazy" src="/img/maggie.png" alt="teammate" />
                   <h1>
                     <b>Maggie Kay Croke</b> <br />
@@ -175,10 +176,10 @@ const Home = () => {
           </div>
         </div>
 
-        <div id="services" className"flex-container">
+        <div id="services" className="flex-container">
           <div
             id="scroll-1"
-            className"flex-item-left scrollFade"
+            className="flex-item-left scrollFade"
             style="flex: 30%"
           >
             <div id="services-header-desktop" style="position: relative;">
@@ -228,55 +229,55 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className"flex-item-right scrollFade" style="flex: 70%">
-            <div className"main">
-              <ul id="bk-list" className"bk-list clearfix">
+          <div className="flex-item-right scrollFade" style="flex: 70%">
+            <div className="main">
+              <ul id="bk-list" className="bk-list clearfix">
                 <li id="book-6">
-                  <div className"bk-book book-1 bk-bookdefault">
-                    <div className"bk-front bk-bookview">
+                  <div className="bk-book book-1 bk-bookdefault">
+                    <div className="bk-front bk-bookview">
                       <div
-                        className"book-cover"
+                        className="book-cover"
                         style="border-radius: 0 20px 20px 0;"
                       >
-                        <div className"book-spine-front"></div>
-                        <div className"band"></div>
+                        <div className="book-spine-front"></div>
+                        <div className="band"></div>
                         <h1
-                          className"book-title"
+                          className="book-title"
                           style="color: transparent; user-select: none"
                           draggable="false"
                         >
                           Our Services
                         </h1>
-                        <div className"cardboard-front"></div>
+                        <div className="cardboard-front"></div>
                         <img
                           loading="lazy"
                           src="/img/logobook.png"
-                          className"book-cover-picture"
+                          className="book-cover-picture"
                           alt="cover"
                         />
                       </div>
                       <div
-                        className"bk-cover-back"
+                        className="bk-cover-back"
                         style="border-radius: 20px 0 0 20px;"
                       >
                         <div
-                          className"cover-back-cardboard"
+                          className="cover-back-cardboard"
                           style="border-radius: 20px 0 0 20px"
                         ></div>
                       </div>
                     </div>
                     <div
-                      className"bk-page bk-bookview"
+                      className="bk-page bk-bookview"
                       style="border-radius: 0 20px 20px 0;"
                     >
-                      <div className"bk-content bk-content-current">
+                      <div className="bk-content bk-content-current">
                         <h3 style="color: black">Design Proposals</h3>
                         <p style="font-family: 'Tenorite', sans-serif;">
                           Crafting comprehensive proposals outlining conceptual
                           design ideas for client review and consideration.
                         </p>
                       </div>
-                      <div className"bk-content">
+                      <div className="bk-content">
                         <h3 style="color: black">Schematic Design</h3>
                         <p style="font-family: 'Tenorite', sans-serif;">
                           Developing preliminary sketches and plans to
@@ -284,7 +285,7 @@ const Home = () => {
                           arrangement.
                         </p>
                       </div>
-                      <div className"bk-content">
+                      <div className="bk-content">
                         <h3 style="color: black">As-Built Condition Reviews</h3>
                         <p style="font-family: 'Tenorite', sans-serif;">
                           Assessing and documenting the current state of a
@@ -292,7 +293,7 @@ const Home = () => {
                           renovations.
                         </p>
                       </div>
-                      <div className"bk-content">
+                      <div className="bk-content">
                         <h3 style="color: black">Interior Design</h3>
                         <p style="font-family: 'Tenorite', sans-serif;">
                           Creating aesthetically pleasing and functional
@@ -300,7 +301,7 @@ const Home = () => {
                           colors, materials, and furnishings.
                         </p>
                       </div>
-                      <div className"bk-content">
+                      <div className="bk-content">
                         <h3 style="color: black">
                           Floor Plan and Design Documents
                         </h3>
@@ -310,7 +311,7 @@ const Home = () => {
                           construction and project execution.
                         </p>
                       </div>
-                      <div className"bk-content">
+                      <div className="bk-content">
                         <h3 style="color: black">3D Visualization</h3>
                         <p style="font-family: 'Tenorite', sans-serif;">
                           {" "}
@@ -319,7 +320,7 @@ const Home = () => {
                           concepts for better client understanding.
                         </p>
                       </div>
-                      <div className"bk-content" style="display: none">
+                      <div className="bk-content" style="display: none">
                         <h3 style="color: black">
                           General Construction | Demolition
                         </h3>
@@ -328,7 +329,7 @@ const Home = () => {
                           precision and adherence to safety standards.
                         </p>
                       </div>
-                      <div className"bk-content">
+                      <div className="bk-content">
                         <h3 style="color: black">
                           Construction Management and Administration
                         </h3>
@@ -338,7 +339,7 @@ const Home = () => {
                           ensuring seamless project delivery.
                         </p>
                       </div>
-                      <div className"bk-content">
+                      <div className="bk-content">
                         <h3 style="color: black">Project Planning</h3>
                         <p style="font-family: 'Tenorite', sans-serif;">
                           Developing comprehensive plans outlining project
@@ -346,7 +347,7 @@ const Home = () => {
                           successful project execution.
                         </p>
                       </div>
-                      <div className"bk-content">
+                      <div className="bk-content">
                         <h3 style="color: black">Procurement and Delivery</h3>
                         <p style="font-family: 'Tenorite', sans-serif;">
                           Managing the sourcing and delivery of materials,
@@ -354,21 +355,21 @@ const Home = () => {
                           implementation.
                         </p>
                       </div>
-                      <div className"ribbon"></div>
+                      <div className="ribbon"></div>
                     </div>
                     <div
-                      className"bk-back bk-bookback"
+                      className="bk-back bk-bookback"
                       style="border-radius: 20px 0 0 20px;"
                     >
                       <div style="height: 100%; width: 10%; position: absolute; background: #222222; right: 0"></div>
-                      <div className"back-cardboard"></div>
-                      <p className"back-text">
+                      <div className="back-cardboard"></div>
+                      <p className="back-text">
                         FORGING CONNECTIONS BY BUILDING BRIDGES ACROSS EVERY
                         INDUSTRY GAP
                       </p>
                     </div>
-                    <div className"bk-right"></div>
-                    <div className"bk-left">
+                    <div className="bk-right"></div>
+                    <div className="bk-left">
                       <h2>
                         <span style="font-weight: bold; color: #000">
                           Our Services
@@ -377,23 +378,23 @@ const Home = () => {
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01
                         </span>
                       </h2>
-                      <div className"spine-cardboard"></div>
-                      <button className"bk-bookback arrow">➦</button>
+                      <div className="spine-cardboard"></div>
+                      <button className="bk-bookback arrow">➦</button>
                     </div>
-                    <div className"bk-top"></div>
-                    <div className"bk-bottom"></div>
+                    <div className="bk-top"></div>
+                    <div className="bk-bottom"></div>
                   </div>
-                  <div className"bk-info"></div>
+                  <div className="bk-info"></div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div id="projects" className"flex-container">
+        <div id="projects" className="flex-container">
           <div
             id="scroll-2"
-            className"flex-item-left scrollFade"
+            className="flex-item-left scrollFade"
             style="flex: 30%; position: relative"
           >
             <div
@@ -429,11 +430,11 @@ const Home = () => {
             </div>
           </div>
           <div
-            className"flex-item-right scrollFade"
+            className="flex-item-right scrollFade"
             style="flex: 70%; padding-top: 10%"
           >
-            <div className"project-wrapper">
-              <div className"project-around">
+            <div className="project-wrapper">
+              <div className="project-around">
                 <div id="project1">
                   <h1>712 West 125th Street</h1>
                   <h3>
@@ -450,7 +451,7 @@ const Home = () => {
                   />
                 </div>
               </div>
-              <div className"project-around">
+              <div className="project-around">
                 <div id="project2">
                   <h1>130 Cutter Mill</h1>
                   <h3>
@@ -468,7 +469,7 @@ const Home = () => {
                   />
                 </div>
               </div>
-              <div className"project-around">
+              <div className="project-around">
                 <div id="project3">
                   <h1>21 Old Westbury [Wedding hall]</h1>
                   <h3>
@@ -487,7 +488,7 @@ const Home = () => {
                   />
                 </div>
               </div>
-              <div className"project-around">
+              <div className="project-around">
                 <div id="project4">
                   <h1>1356 Broadway [Gotham Hall] </h1>
                   <h3>
@@ -506,15 +507,15 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <a href="/projects" className"button project-button">
+            <Link href="/projects" className="button project-button">
               PROJECT GALLERY
-            </a>
+            </Link>
           </div>
         </div>
-        <div id="contact" className"flex-container" style="flex: 30%">
+        <div id="contact" className="flex-container" style="flex: 30%">
           <div
             id="scroll-3"
-            className"flex-item-left scrollFade"
+            className="flex-item-left scrollFade"
             style="flex: 30%"
           >
             <div id="contact-header-desktop" style="position: relative;">
@@ -552,10 +553,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className"flex-item-right scrollFade" style="flex: 70%">
+          <div className="flex-item-right scrollFade" style="flex: 70%">
             <div>
               <form
-                className"form contact"
+                className="form contact"
                 id="form1"
                 action="https://formsubmit.co/admin@arkco.nyc"
                 method="POST"
@@ -577,14 +578,14 @@ const Home = () => {
                 />
                 <img
                   loading="lazy"
-                  className"clipboard"
+                  className="clipboard"
                   src="/img/clipboard.png"
                   draggable="false"
                   style="position:absolute; width: 40%; top: -15%; left: 0; right: 0; margin: auto"
                   alt="project"
                 />
                 <div
-                  className"contact-top"
+                  className="contact-top"
                   style="display: flex; flex-direction: row; justify-content: space-between; position: relative; z-index: 90"
                 >
                   <h2>CONTACT US</h2>
@@ -619,29 +620,29 @@ const Home = () => {
                 <br />
                 <button
                   type="submit"
-                  className"button"
+                  className="button"
                   style="position: absolute; right: 10%; transform: scale(.8)"
                 >
                   Send Message
                 </button>
 
-                <div className"ribbon-contact">
+                <div className="ribbon-contact">
                   <span
-                    className"fa fa-location-arrow"
+                    className="fa fa-location-arrow"
                     onclick="window.open('https://maps.app.goo.gl/3S2kgXWk48vREADu9', '_blank')"
                   ></span>
                   <span
-                    className"fa fa-phone"
+                    className="fa fa-phone"
                     onclick="window.location.href = 'tel:212-547-9000'"
                   ></span>
                   <span
-                    className"fa fa-envelope"
+                    className="fa fa-envelope"
                     onclick="window.location.href = 'mailto:admin@arkco.nyc';"
                   ></span>
                 </div>
               </form>
               <form
-                className"form contact"
+                className="form contact"
                 id="form2"
                 action="https://formsubmit.co/talent@aapc.nyc"
                 method="POST"
@@ -669,14 +670,14 @@ const Home = () => {
                 />
                 <img
                   loading="lazy"
-                  className"clipboard"
+                  className="clipboard"
                   src="/img/clipboard.png"
                   draggable="false"
                   style="position:absolute; width: 40%; top: -15%; left: 0; right: 0; margin: auto"
                   alt="project"
                 />
                 <div
-                  className"contact-top"
+                  className="contact-top"
                   style="display: flex; flex-direction: row; justify-content: space-between; position: relative; z-index: 90"
                 >
                   <h2
@@ -711,23 +712,23 @@ const Home = () => {
                 <br />
                 <button
                   type="submit"
-                  className"button"
+                  className="button"
                   style="position: absolute; right: 10%; transform: scale(.8)"
                 >
                   Apply
                 </button>
 
-                <div className"ribbon-contact">
+                <div className="ribbon-contact">
                   <span
-                    className"fa fa-location-arrow"
+                    className="fa fa-location-arrow"
                     onclick="window.open('https://maps.app.goo.gl/3S2kgXWk48vREADu9', '_blank')"
                   ></span>
                   <span
-                    className"fa fa-phone"
+                    className="fa fa-phone"
                     onclick="window.location.href = 'tel:212-547-9000'"
                   ></span>
                   <span
-                    className"fa fa-envelope"
+                    className="fa fa-envelope"
                     onclick="window.location.href = 'mailto:admin@arkco.nyc';"
                   ></span>
                 </div>
@@ -735,8 +736,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <h1 className"about-outline-text AOT-ark">ARK</h1>
-        <h1 className"about-outline-text AOT-co">CO</h1>
+        <h1 className="about-outline-text AOT-ark">ARK</h1>
+        <h1 className="about-outline-text AOT-co">CO</h1>
       </div>
 
       {/* <script type="text/javascript">
@@ -825,7 +826,7 @@ const Home = () => {
 </script>
 <script>
 
-  // Get all buttons with className"btn" inside the container
+  // Get all buttons with className="btn" inside the container
   var btns = document.getElementsByClassName("item");
   console.log(btns);
 

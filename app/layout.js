@@ -1,3 +1,4 @@
+import Script from "next/script";
 import Calendly from "./components/calendly";
 
 export const metadata = {

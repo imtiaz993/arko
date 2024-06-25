@@ -21,8 +21,8 @@ const Contact = () => {
       >
         ARKCO
       </h1>
-      <div id="contact" className"flex-container" style="flex: 30%">
-        <div id="scroll-3" className"flex-item-left scrollFade" style="flex: 30%">
+      <div id="contact" className="flex-container" style="flex: 30%">
+        <div id="scroll-3" className="flex-item-left scrollFade" style="flex: 30%">
           <div id="contact-header-desktop" style="position: relative;">
             <div style="transform: rotate(-90deg);">
               <h1 style="font-size: 5vmax">CONTACT</h1>
@@ -58,10 +58,10 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className"flex-item-right scrollFade" style="flex: 70%">
+        <div className="flex-item-right scrollFade" style="flex: 70%">
           <div>
             <form
-              className"form contact"
+              className="form contact"
               id="form1"
               action="https://formsubmit.co/admin@arkco.nyc"
               method="POST"
@@ -79,14 +79,14 @@ const Contact = () => {
               />
               <img
                 loading="lazy"
-                className"clipboard"
+                className="clipboard"
                 src="/img/clipboard.png"
                 draggable="false"
                 style="position:absolute; width: 40%; top: -15%; left: 0; right: 0; margin: auto"
                 alt="project"
               />
               <div
-                className"contact-top"
+                className="contact-top"
                 style="display: flex; flex-direction: row; justify-content: space-between; position: relative; z-index: 90"
               >
                 <h2>CONTACT US</h2>
@@ -121,29 +121,29 @@ const Contact = () => {
               <br />
               <button
                 type="submit"
-                className"button"
+                className="button"
                 style="position: absolute; right: 10%; transform: scale(.8)"
               >
                 Send Message
               </button>
 
-              <div className"ribbon-contact">
+              <div className="ribbon-contact">
                 <span
-                  className"fa fa-location-arrow"
+                  className="fa fa-location-arrow"
                   onclick="window.open('https://maps.app.goo.gl/3S2kgXWk48vREADu9', '_blank')"
                 ></span>
                 <span
-                  className"fa fa-phone"
+                  className="fa fa-phone"
                   onclick="window.location.href = 'tel:212-547-9000'"
                 ></span>
                 <span
-                  className"fa fa-envelope"
+                  className="fa fa-envelope"
                   onclick="window.location.href = 'mailto:admin@arkco.nyc';"
                 ></span>
               </div>
             </form>
             <form
-              className"form contact"
+              className="form contact"
               id="form2"
               action="https://formsubmit.co/talent@aapc.nyc"
               method="POST"
@@ -167,14 +167,14 @@ const Contact = () => {
               />
               <img
                 loading="lazy"
-                className"clipboard"
+                className="clipboard"
                 src="/img/clipboard.png"
                 draggable="false"
                 style="position:absolute; width: 40%; top: -15%; left: 0; right: 0; margin: auto"
                 alt="project"
               />
               <div
-                className"contact-top"
+                className="contact-top"
                 style="display: flex; flex-direction: row; justify-content: space-between; position: relative; z-index: 90"
               >
                 <h2
@@ -209,23 +209,23 @@ const Contact = () => {
               <br />
               <button
                 type="submit"
-                className"button"
+                className="button"
                 style="position: absolute; right: 10%; transform: scale(.8)"
               >
                 Apply
               </button>
 
-              <div className"ribbon-contact">
+              <div className="ribbon-contact">
                 <span
-                  className"fa fa-location-arrow"
+                  className="fa fa-location-arrow"
                   onclick="window.open('https://maps.app.goo.gl/3S2kgXWk48vREADu9', '_blank')"
                 ></span>
                 <span
-                  className"fa fa-phone"
+                  className="fa fa-phone"
                   onclick="window.location.href = 'tel:212-547-9000'"
                 ></span>
                 <span
-                  className"fa fa-envelope"
+                  className="fa fa-envelope"
                   onclick="window.location.href = 'mailto:admin@arkco.nyc';"
                 ></span>
               </div>

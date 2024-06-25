@@ -12,8 +12,12 @@ export const metadata = {
 const Allen = () => {
   return (
     <div>
-      <div id="projects" className"flex-container">
-        <div id="scroll-1" className"flex-item-left scrollFade" style="flex: 30%">
+      <div id="projects" className="flex-container">
+        <div
+          id="scroll-1"
+          className="flex-item-left scrollFade"
+          style="flex: 30%"
+        >
           <h1
             id="scroll-arkco-1"
             style="position: fixed; writing-mode: vertical-lr; font-size: 6vmax; color: #F7931E; transform: rotate(180deg); left: 5%; top:5%"
@@ -37,13 +41,13 @@ const Allen = () => {
             </h1>
           </div>
         </div>
-        <div className"flex-item-right scrollFade" style="flex: 70%">
+        <div className="flex-item-right scrollFade" style="flex: 70%">
           <h1 id="section1title">About Allen Azarkian</h1>
 
           <div id="container">
             <div id="floated">
-              <div className"card card-color-0">
-                <div className"border"></div>
+              <div className="card card-color-0">
+                <div className="border"></div>
                 <img src="/img/allen_azarkian.png" alt="allen" />
                 <h1>Allen Azarkian</h1>
               </div>
@@ -69,13 +73,14 @@ const Allen = () => {
               <br />
               <br />
               The primary challenge within the industry stems from disparities
-              between the architect's vision, the contractor's execution, and
-              the expeditor's documentation. These inconsistencies often result
-              in considerable delays and expenses for clients. Recognizing the
-              critical significance of time in the property sector, where delays
-              quickly translate into missed business opportunities and financial
-              setbacks, Allen strongly emphasizes strict adherence to New York
-              City's building codes and zoning regulations.
+              between the architect&apos;s vision, the contractor&apos;s
+              execution, and the expeditor&apos;s documentation. These
+              inconsistencies often result in considerable delays and expenses
+              for clients. Recognizing the critical significance of time in the
+              property sector, where delays quickly translate into missed
+              business opportunities and financial setbacks, Allen strongly
+              emphasizes strict adherence to New York City&apos;s building codes
+              and zoning regulations.
               <br />
               <br />
               To address these challenges, Allen has built a cohesive team
@@ -93,10 +98,10 @@ const Allen = () => {
               efficient, seamless, and frictionless process. He effectively
               eliminates intermediaries and erroneous practices by centralizing
               various facets of the real estate industry under one umbrella.
-              Allen's proactive approach extends beyond the confines of New York
-              City, as he actively participates in real estate endeavors across
-              multiple states, thus gaining invaluable insights into diverse
-              city agencies and permitting procedures.
+              Allen&apos;s proactive approach extends beyond the confines of New
+              York City, as he actively participates in real estate endeavors
+              across multiple states, thus gaining invaluable insights into
+              diverse city agencies and permitting procedures.
               <br />
               <br />
               New York City has now enabled a functional online process for both
@@ -107,13 +112,13 @@ const Allen = () => {
               ramifications, liens, etc.
               <br />
               <br />
-              Allen’s strategic approach involves collecting all the necessary
-              documents, ensuring accuracy, and setting up/implementing systems
-              that are properly traced, monitored, and executed. Allen remains
-              committed to leveraging technology and obtaining licenses
-              expedites all relevant processes, reduces cost, and reduces the
-              need for intermediaries, which ultimately benefits property owners
-              and managers.
+              Allen&apos;s strategic approach involves collecting all the
+              necessary documents, ensuring accuracy, and setting
+              up/implementing systems that are properly traced, monitored, and
+              executed. Allen remains committed to leveraging technology and
+              obtaining licenses expedites all relevant processes, reduces cost,
+              and reduces the need for intermediaries, which ultimately benefits
+              property owners and managers.
             </h2>
           </div>
 

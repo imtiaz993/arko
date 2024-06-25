@@ -1,6 +1,6 @@
-import "../../../public/css/style.css";
-import "../../../public/css/projects.css";
-import "../../../public/css/blog.css";
+import "../../../../public/css/style.css";
+import "../../../../public/css/projects.css";
+import "../../../../public/css/blog.css";
 
 export const metadata = {
   title: "ARKCO | Blog Post",
