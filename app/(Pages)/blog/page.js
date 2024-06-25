@@ -13,8 +13,8 @@ const BlogDetails = () => {
   return (
     <div>
       {" "}
-      <div id="projects" class="flex-container">
-        <div id="scroll-1" class="flex-item-left scrollFade" style="flex: 30%">
+      <div id="projects" className"flex-container">
+        <div id="scroll-1" className"flex-item-left scrollFade" style="flex: 30%">
           <h1
             id="scroll-arkco-1"
             style="position: fixed; writing-mode: vertical-lr; font-size: 6vmax; color: #F7931E; transform: rotate(180deg); left: 5%; top:26%"
@@ -53,8 +53,8 @@ const BlogDetails = () => {
             </div>
           </div>
         </div>
-        <div class="flex-item-right scrollFade" style="flex: 70%;">
-          <div id="blog-posts" class="container"></div>
+        <div className"flex-item-right scrollFade" style="flex: 70%;">
+          <div id="blog-posts" className"container"></div>
         </div>
       </div>
       {/* <script>
@@ -107,7 +107,7 @@ const createListItem = (item) => {
       const date = new Date(item.updatedAt);
       const formattedDate = date.getDate() +  " " + date.toLocaleString('default', { month: 'long' }) + " " + date.getFullYear()
       return `
-      <div class="section" onclick="location.assign('blog-single.html?id=${rfc3986EncodeURIComponent(item.identifier)}');">
+      <div className"section" onclick="location.assign('blog-single.html?id=${rfc3986EncodeURIComponent(item.identifier)}');">
           <div  onclick="location.assign('blog-single.html?id=${rfc3986EncodeURIComponent(item.identifier)}');">
               <img src="${item.photo}"/>
               <h1>${item.title}</h1>

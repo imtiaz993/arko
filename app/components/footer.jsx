@@ -7,7 +7,7 @@ const Footer = () => {
   const router = useRouter();
   return (
     <footer>
-      <div class="footer-links">
+      <div className"footer-links">
         <Link href="/about">About Us</Link>
         <Link href="/services">Our Services</Link>
         <Link href="/projects">Our Projects</Link>

@@ -5,36 +5,36 @@ const Navbar = () => {
     <nav>
       <ul>
         <li>
-          <a href="/blog" class="item">
+          <a href="/blog" className"item">
             BLOG
           </a>
         </li>
         <li>
-          <Link href="/contact" class="item">
+          <Link href="/contact" className"item">
             CONTACT
           </Link>
         </li>
         <li>
-          <Link href="/projects" class="item">
+          <Link href="/projects" className"item">
             PROJECTS
           </Link>
         </li>
         <li>
-          <Link href="/services" class="item">
+          <Link href="/services" className"item">
             SERVICES
           </Link>
         </li>
         <li>
-          <Link href="#" class="item active">
+          <Link href="#" className"item active">
             HOME
           </Link>
         </li>
-        <li class="logo">
+        <li className"logo">
           <Link href="/">
             <img
               loading="lazy"
-              src="img/arkco_logo.png"
-              class="logo-img"
+              src="/img/arkco_logo.png"
+              className"logo-img"
               alt="logo"
             />
           </Link>

@@ -23,10 +23,10 @@ const Services = () => {
       </h1>
       <div
         id="services"
-        class="flex-container"
+        className"flex-container"
         style="margin-top: 10%; margin-bottom: 10%;"
       >
-        <div id="scroll-1" class="flex-item-left scrollFade" style="flex: 30%">
+        <div id="scroll-1" className"flex-item-left scrollFade" style="flex: 30%">
           <div id="services-header-desktop" style="position: relative;">
             <div style="transform: rotate(-90deg);">
               <h1 style="font-size: 5vmax">SERVICES</h1>
@@ -73,62 +73,62 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div class="flex-item-right scrollFade" style="flex: 70%">
-          <div class="main">
-            <ul id="bk-list" class="bk-list clearfix">
+        <div className"flex-item-right scrollFade" style="flex: 70%">
+          <div className"main">
+            <ul id="bk-list" className"bk-list clearfix">
               <li id="book-6">
-                <div class="bk-book book-1 bk-bookdefault">
-                  <div class="bk-front bk-bookview">
+                <div className"bk-book book-1 bk-bookdefault">
+                  <div className"bk-front bk-bookview">
                     <div
-                      class="book-cover"
+                      className"book-cover"
                       style="border-radius: 0 20px 20px 0;"
                     >
-                      <div class="book-spine-front"></div>
-                      <div class="band"></div>
+                      <div className"book-spine-front"></div>
+                      <div className"band"></div>
                       <h1
-                        class="book-title"
+                        className"book-title"
                         style="color: transparent; user-select: none"
                         draggable="false"
                       >
                         Our Services
                       </h1>
-                      <div class="cardboard-front"></div>
+                      <div className"cardboard-front"></div>
                       <img
                         loading="lazy"
-                        src="img/logobook.png"
-                        class="book-cover-picture"
+                        src="/img/logobook.png"
+                        className"book-cover-picture"
                         alt="cover"
                       />
                     </div>
                     <div
-                      class="bk-cover-back"
+                      className"bk-cover-back"
                       style="border-radius: 20px 0 0 20px;"
                     >
                       <div
-                        class="cover-back-cardboard"
+                        className"cover-back-cardboard"
                         style="border-radius: 20px 0 0 20px"
                       ></div>
                     </div>
                   </div>
                   <div
-                    class="bk-page bk-bookview"
+                    className"bk-page bk-bookview"
                     style="border-radius: 0 20px 20px 0;"
                   >
-                    <div class="bk-content bk-content-current">
+                    <div className"bk-content bk-content-current">
                       <h3 style="color: black">Design Proposals</h3>
                       <p style="font-family: 'Tenorite', sans-serif;">
                         Crafting comprehensive proposals outlining conceptual
                         design ideas for client review and consideration.
                       </p>
                     </div>
-                    <div class="bk-content">
+                    <div className"bk-content">
                       <h3 style="color: black">Schematic Design</h3>
                       <p style="font-family: 'Tenorite', sans-serif;">
                         Developing preliminary sketches and plans to illustrate
                         the overall design concept and spatial arrangement.
                       </p>
                     </div>
-                    <div class="bk-content">
+                    <div className"bk-content">
                       <h3 style="color: black">As-Built Condition Reviews</h3>
                       <p style="font-family: 'Tenorite', sans-serif;">
                         Assessing and documenting the current state of a
@@ -136,7 +136,7 @@ const Services = () => {
                         renovations.
                       </p>
                     </div>
-                    <div class="bk-content">
+                    <div className"bk-content">
                       <h3 style="color: black">Interior Design</h3>
                       <p style="font-family: 'Tenorite', sans-serif;">
                         Creating aesthetically pleasing and functional interior
@@ -144,7 +144,7 @@ const Services = () => {
                         materials, and furnishings.
                       </p>
                     </div>
-                    <div class="bk-content">
+                    <div className"bk-content">
                       <h3 style="color: black">
                         Floor Plan and Design Documents
                       </h3>
@@ -154,7 +154,7 @@ const Services = () => {
                         execution.
                       </p>
                     </div>
-                    <div class="bk-content">
+                    <div className"bk-content">
                       <h3 style="color: black">3D Visualization</h3>
                       <p style="font-family: 'Tenorite', sans-serif;">
                         {" "}
@@ -164,7 +164,7 @@ const Services = () => {
                       </p>
                     </div>
 
-                    <div class="bk-content">
+                    <div className"bk-content">
                       <h3 style="color: black">
                         Construction Management and Administration
                       </h3>
@@ -174,7 +174,7 @@ const Services = () => {
                         ensuring seamless project delivery.
                       </p>
                     </div>
-                    <div class="bk-content">
+                    <div className"bk-content">
                       <h3 style="color: black">Project Planning</h3>
                       <p style="font-family: 'Tenorite', sans-serif;">
                         Developing comprehensive plans outlining project scope,
@@ -182,7 +182,7 @@ const Services = () => {
                         project execution.
                       </p>
                     </div>
-                    <div class="bk-content">
+                    <div className"bk-content">
                       <h3 style="color: black">Procurement and Delivery</h3>
                       <p style="font-family: 'Tenorite', sans-serif;">
                         Managing the sourcing and delivery of materials,
@@ -190,21 +190,21 @@ const Services = () => {
                         implementation.
                       </p>
                     </div>
-                    <div class="ribbon"></div>
+                    <div className"ribbon"></div>
                   </div>
                   <div
-                    class="bk-back bk-bookback"
+                    className"bk-back bk-bookback"
                     style="border-radius: 20px 0 0 20px;"
                   >
                     <div style="height: 100%; width: 10%; position: absolute; background: #222222; right: 0"></div>
-                    <div class="back-cardboard"></div>
-                    <p class="back-text">
+                    <div className"back-cardboard"></div>
+                    <p className"back-text">
                       FORGING CONNECTIONS BY BUILDING BRIDGES ACROSS EVERY
                       INDUSTRY GAP
                     </p>
                   </div>
-                  <div class="bk-right"></div>
-                  <div class="bk-left">
+                  <div className"bk-right"></div>
+                  <div className"bk-left">
                     <h2>
                       <span style="font-weight: bold; color: #000">
                         Our Services
@@ -213,13 +213,13 @@ const Services = () => {
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01
                       </span>
                     </h2>
-                    <div class="spine-cardboard"></div>
-                    <button class="bk-bookback arrow">➦</button>
+                    <div className"spine-cardboard"></div>
+                    <button className"bk-bookback arrow">➦</button>
                   </div>
-                  <div class="bk-top"></div>
-                  <div class="bk-bottom"></div>
+                  <div className"bk-top"></div>
+                  <div className"bk-bottom"></div>
                 </div>
-                <div class="bk-info"></div>
+                <div className"bk-info"></div>
               </li>
             </ul>
           </div>

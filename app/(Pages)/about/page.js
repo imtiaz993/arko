@@ -21,8 +21,8 @@ const About = () => {
       >
         ARKCO
       </h1>
-      <div id="about" class="flex-container" style="margin-top: 5%;">
-        <div class="flex-item-left scrollFade" style="flex: 30%">
+      <div id="about" className"flex-container" style="margin-top: 5%;">
+        <div className"flex-item-left scrollFade" style="flex: 30%">
           <div id="about-header-desktop" style="position: relative;">
             <div style="transform: rotate(-90deg);">
               <h1 style="font-size: 5vmax">ABOUT US</h1>
@@ -57,24 +57,24 @@ const About = () => {
           </div>
         </div>
         <div
-          class="flex-item-right scrollFade flex-container"
+          className"flex-item-right scrollFade flex-container"
           style="flex: 70%; padding-bottom: 10vh"
         >
-          <div class="service-box" style="flex: 60%">
-            <div class="service-card" id="servicecard1">
+          <div className"service-box" style="flex: 60%">
+            <div className"service-card" id="servicecard1">
               <h1 style="position: absolute; left: 0; right: 0; margin: auto; z-index: 10; color: black">
                 ARKCO
               </h1>
-              <div class="imgBox">
-                <img loading="lazy" src="img/about.png" alt="some image" />
+              <div className"imgBox">
+                <img loading="lazy" src="/img/about.png" alt="some image" />
               </div>
-              <div class="details">
+              <div className"details">
                 <h2>
                   Who We Are
                   <br />
                 </h2>
               </div>
-              <div class="inside-content">
+              <div className"inside-content">
                 <p>
                   ArkCo aims to elevate the construction project management
                   experience. Recognizing the notorious complexity and
@@ -90,23 +90,23 @@ const About = () => {
             </div>
           </div>
 
-          <div class="container" style="flex: 40%">
-            <div class="card-column column-0">
+          <div className"container" style="flex: 40%">
+            <div className"card-column column-0">
               <div
                 onclick="window.location.href = '/allen'"
                 style="cursor: pointer"
-                class="card card-color-0"
+                className"card card-color-0"
               >
-                <div class="border"></div>
-                <img loading="lazy" src="img/allen_azarkian.png" alt="allen" />
+                <div className"border"></div>
+                <img loading="lazy" src="/img/allen_azarkian.png" alt="allen" />
                 <h1>
                   <b>Allen Azarkian</b> <br /> CEO and Founder
                 </h1>
               </div>
             </div>
-            <div class="card-column column-1">
-              <div class="card card-color-1">
-                <div class="border"></div>
+            <div className"card-column column-1">
+              <div className"card card-color-1">
+                <div className"border"></div>
                 <img
                   loading="lazy"
                   src="https://www.aapc.nyc/img/pierre.png"
@@ -116,9 +116,9 @@ const About = () => {
                   <b>Pierre Tairouz</b> <br /> Design Team Director
                 </h1>
               </div>
-              <div class="card card-color-1">
-                <div class="border"></div>
-                <img loading="lazy" src="img/maggie.png" alt="teammate" />
+              <div className"card card-color-1">
+                <div className"border"></div>
+                <img loading="lazy" src="/img/maggie.png" alt="teammate" />
                 <h1>
                   <b>Maggie Kay Croke</b> <br />
                   Junior Designer

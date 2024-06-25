@@ -12,8 +12,8 @@ export const metadata = {
 const Allen = () => {
   return (
     <div>
-      <div id="projects" class="flex-container">
-        <div id="scroll-1" class="flex-item-left scrollFade" style="flex: 30%">
+      <div id="projects" className"flex-container">
+        <div id="scroll-1" className"flex-item-left scrollFade" style="flex: 30%">
           <h1
             id="scroll-arkco-1"
             style="position: fixed; writing-mode: vertical-lr; font-size: 6vmax; color: #F7931E; transform: rotate(180deg); left: 5%; top:5%"
@@ -37,14 +37,14 @@ const Allen = () => {
             </h1>
           </div>
         </div>
-        <div class="flex-item-right scrollFade" style="flex: 70%">
+        <div className"flex-item-right scrollFade" style="flex: 70%">
           <h1 id="section1title">About Allen Azarkian</h1>
 
           <div id="container">
             <div id="floated">
-              <div class="card card-color-0">
-                <div class="border"></div>
-                <img src="img/allen_azarkian.png" alt="allen" />
+              <div className"card card-color-0">
+                <div className"border"></div>
+                <img src="/img/allen_azarkian.png" alt="allen" />
                 <h1>Allen Azarkian</h1>
               </div>
             </div>
@@ -123,31 +123,31 @@ const Allen = () => {
             <div id="business-section">
               <img
                 id="azark"
-                src="img/AZARK_Logo%20%5Binverted%5D.png"
+                src="/img/AZARK_Logo%20%5Binverted%5D.png"
                 alt="azark"
               />
               <img
                 id="aapc"
                 onclick="window.location.href = 'https://aapc.nyc'"
-                src="img/aapc.png"
+                src="/img/aapc.png"
                 alt="aapc"
               />
               <img
                 id="bvs"
                 onclick="window.location.href = 'https://bvs.nyc'"
-                src="img/BVS%20White.png"
+                src="/img/BVS%20White.png"
                 alt="bvs"
               />
               <img
                 id="violerts"
                 onclick="window.location.href = 'https://www.violerts.com'"
-                src="img/Violerts%20Logo.png"
+                src="/img/Violerts%20Logo.png"
                 alt="violerts"
               />
               <img
                 id="vps"
                 onclick="window.location.href = 'https://vps.nyc'"
-                src="img/VPS_Logo.png"
+                src="/img/VPS_Logo.png"
                 alt="vps"
               />
             </div>
