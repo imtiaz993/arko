@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  font-family: "Century Gothic", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: radial-gradient(circle, #636465 10%, transparent 1%);
+  background-color: #353535;
+  background-position: 0 0;
+  background-size: 4vmin 4vmin;
+  overflow-x: hidden;
+  margin: 0;
+  color: white;
+  margin: 5%;
+}
+
+#the-text img{
+    width: 100%;
+    padding: 5%;
+}
+
+/**Scrollbar**/
+::-webkit-scrollbar {
+  max-width: 10px;
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f7931e;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #222;
+}

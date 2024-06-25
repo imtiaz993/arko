@@ -1,58 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ARKCO | Blog Post</title>
-    <meta name="description" content="We strategically integrate our expertise in construction, and project management to offer seamless solutions.">
-    <meta name="keywords" content="Construction, ArkCo, Building, Design">
-    <link rel="author" href="Azark Inc" />
-    <link rel="canonical" href="https://arkco.nyc/" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f79421">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="stylesheet" href="css/blog.css">
-</head>
-<style>
+import "../../../public/css/style.css";
+import "../../../public/css/projects.css";
+import "../../../public/css/blog.css";
 
-    #the-text img{
-        width: 100%;
-        padding: 5%;
-    }
-</style>
-<body  style="width: 100vw; position: relative; overflow-x: hidden; height: 100%">
+export const metadata = {
+  title: "ARKCO | Blog Post",
+  description:
+    "We strategically integrate our expertise in construction, and project management to offer seamless solutions.",
+  keywords: "Construction, ArkCo, Building, Design",
+};
 
+const BlogDetails = () => {
+  return (
+    <div>
+      <div id="blog-posts"></div>
 
-
-    <nav>
-        <ul>
-            <li><a href="/blog" class="item">BLOG</a></li>
-            <li><a href="/contact" class="item">CONTACT</a></li>
-            <li><a href="/projects" class="item">PROJECTS</a></li>
-            <li><a href="/services" class="item">SERVICES</a></li>
-            <li><a href="/" class="item">HOME</a></li>
-            <li class="logo"><a href="/"><img src="img/arkco_logo.png" class="logo-img" alt="logo"/></a></li>
-        </ul>
-    </nav>
-<div id="blog-posts">
-
-</div>
-
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
-<script src='https://unpkg.com/ionicons@5.0.0/dist/ionicons.js'></script>
-<!--<script src="./js/projects.js"></script>-->
-<script>
-    /* OVERLAY */
+      {/* <script>
     gsap.to(".first", {
         duration: 1.5,
         delay: 0.5,
@@ -74,21 +36,9 @@
         ease: "expo.inOut",
     });
 
-</script>
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function () {
-    Calendly.initBadgeWidget({
-        url: 'https://calendly.com/general-services',
-        text: 'Free Consultation',
-        color: '#F7931E',
-        textColor: '#ffffff',
-        branding: false,
-        zIndex: 100
-    });
-}</script>
+</script> */}
 
-<script>
+      {/* <script>
     function GetURLParameter(sParam) {
         var sPageURL = window.location.search.substring(1);
         var sURLVariables = sPageURL.split('&');
@@ -175,8 +125,9 @@
 
     getPosts()
 
-</script>
+</script> */}
+    </div>
+  );
+};
 
-
-</body>
-</html>
+export default BlogDetails;
