@@ -133,25 +133,33 @@ const Allen = () => {
               />
               <img
                 id="aapc"
-                onclick="window.location.href = 'https://aapc.nyc'"
+                onClick={() => {
+                  window.location.href = "https://aapc.nyc";
+                }}
                 src="/img/aapc.png"
                 alt="aapc"
               />
               <img
                 id="bvs"
-                onclick="window.location.href = 'https://bvs.nyc'"
+                onClick={() => {
+                  window.location.href = "https://bvs.nyc";
+                }}
                 src="/img/BVS%20White.png"
                 alt="bvs"
               />
               <img
                 id="violerts"
-                onclick="window.location.href = 'https://www.violerts.com'"
+                onClick={() => {
+                  window.location.href = "https://www.violerts.com";
+                }}
                 src="/img/Violerts%20Logo.png"
                 alt="violerts"
               />
               <img
                 id="vps"
-                onclick="window.location.href = 'https://vps.nyc'"
+                onClick={() => {
+                  window.location.href = "https://vps.nyc";
+                }}
                 src="/img/VPS_Logo.png"
                 alt="vps"
               />

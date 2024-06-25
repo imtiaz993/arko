@@ -1,3 +1,5 @@
+"use client";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import "../../../public/css/style.css";
 import "../../../public/css/books.css";
@@ -14,6 +16,7 @@ export const metadata = {
 };
 
 const Home = () => {
+  const router = useRouter();
   return (
     <div>
       <div
@@ -136,7 +139,9 @@ const Home = () => {
             <div className="container" style="flex: 40%">
               <div className="card-column column-0">
                 <div
-                  onclick="window.location.href = '/allen'"
+                  onClick={() => {
+                    router.push("/allen");
+                  }}
                   style="cursor: pointer"
                   className="card card-color-0"
                 >
@@ -522,11 +527,19 @@ const Home = () => {
               <div style="transform: rotate(-90deg);">
                 <h1 style="font-size: 5vmax">CONTACT</h1>
                 <h1 style="font-size: 1.5vmax; margin: -15px 0; cursor: pointer">
-                  <b onclick="window.location.href = 'tel:212-547-9000'">
+                  <b
+                    onClick={() => {
+                      window.location.href = "tel:212-547-9000";
+                    }}
+                  >
                     CALL US
                   </b>{" "}
                   <br />{" "}
-                  <b onclick="window.location.href = 'mailto:admin@arkco.nyc';">
+                  <b
+                    onClick={() => {
+                      window.location.href = "mailto:admin@arkco.nyc";
+                    }}
+                  >
                     EMAIL US
                   </b>
                 </h1>
@@ -629,15 +642,24 @@ const Home = () => {
                 <div className="ribbon-contact">
                   <span
                     className="fa fa-location-arrow"
-                    onclick="window.open('https://maps.app.goo.gl/3S2kgXWk48vREADu9', '_blank')"
+                    onClick={() => {
+                      window.open(
+                        "https://maps.app.goo.gl/3S2kgXWk48vREADu9",
+                        "_blank"
+                      );
+                    }}
                   ></span>
                   <span
                     className="fa fa-phone"
-                    onclick="window.location.href = 'tel:212-547-9000'"
+                    onClick={() => {
+                      window.location.href = "tel:212-547-9000";
+                    }}
                   ></span>
                   <span
                     className="fa fa-envelope"
-                    onclick="window.location.href = 'mailto:admin@arkco.nyc';"
+                    onClick={() => {
+                      window.location.href = "mailto:admin@arkco.nyc";
+                    }}
                   ></span>
                 </div>
               </form>
@@ -721,15 +743,15 @@ const Home = () => {
                 <div className="ribbon-contact">
                   <span
                     className="fa fa-location-arrow"
-                    onclick="window.open('https://maps.app.goo.gl/3S2kgXWk48vREADu9', '_blank')"
+                    onClick="window.open('https://maps.app.goo.gl/3S2kgXWk48vREADu9', '_blank')"
                   ></span>
                   <span
                     className="fa fa-phone"
-                    onclick="window.location.href = 'tel:212-547-9000'"
+                    onClick="window.location.href = 'tel:212-547-9000'"
                   ></span>
                   <span
                     className="fa fa-envelope"
-                    onclick="window.location.href = 'mailto:admin@arkco.nyc';"
+                    onClick="window.location.href = 'mailto:admin@arkco.nyc';"
                   ></span>
                 </div>
               </form>

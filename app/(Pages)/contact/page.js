@@ -22,16 +22,28 @@ const Contact = () => {
         ARKCO
       </h1>
       <div id="contact" className="flex-container" style="flex: 30%">
-        <div id="scroll-3" className="flex-item-left scrollFade" style="flex: 30%">
+        <div
+          id="scroll-3"
+          className="flex-item-left scrollFade"
+          style="flex: 30%"
+        >
           <div id="contact-header-desktop" style="position: relative;">
             <div style="transform: rotate(-90deg);">
               <h1 style="font-size: 5vmax">CONTACT</h1>
               <h1 style="font-size: 1.5vmax; margin: -15px 0; cursor: pointer">
-                <b onclick="window.location.href = 'tel:212-547-9000'">
+                <b
+                  onClick={() => {
+                    window.location.href = "tel:212-547-9000";
+                  }}
+                >
                   CALL US
                 </b>{" "}
                 <br />{" "}
-                <b onclick="window.location.href = 'mailto:admin@arkco.nyc';">
+                <b
+                  onClick={() => {
+                    window.location.href = "mailto:admin@arkco.nyc";
+                  }}
+                >
                   EMAIL US
                 </b>
               </h1>
@@ -130,15 +142,24 @@ const Contact = () => {
               <div className="ribbon-contact">
                 <span
                   className="fa fa-location-arrow"
-                  onclick="window.open('https://maps.app.goo.gl/3S2kgXWk48vREADu9', '_blank')"
+                  onClick={() => {
+                    window.open(
+                      "https://maps.app.goo.gl/3S2kgXWk48vREADu9",
+                      "_blank"
+                    );
+                  }}
                 ></span>
                 <span
                   className="fa fa-phone"
-                  onclick="window.location.href = 'tel:212-547-9000'"
+                  onClick={() => {
+                    window.location.href = "tel:212-547-9000";
+                  }}
                 ></span>
                 <span
                   className="fa fa-envelope"
-                  onclick="window.location.href = 'mailto:admin@arkco.nyc';"
+                  onClick={() => {
+                    window.location.href = "mailto:admin@arkco.nyc";
+                  }}
                 ></span>
               </div>
             </form>
@@ -218,15 +239,24 @@ const Contact = () => {
               <div className="ribbon-contact">
                 <span
                   className="fa fa-location-arrow"
-                  onclick="window.open('https://maps.app.goo.gl/3S2kgXWk48vREADu9', '_blank')"
+                  onClick={() => {
+                    window.open(
+                      "https://maps.app.goo.gl/3S2kgXWk48vREADu9",
+                      "_blank"
+                    );
+                  }}
                 ></span>
                 <span
                   className="fa fa-phone"
-                  onclick="window.location.href = 'tel:212-547-9000'"
+                  onClick={() => {
+                    window.location.href = "tel:212-547-9000";
+                  }}
                 ></span>
                 <span
                   className="fa fa-envelope"
-                  onclick="window.location.href = 'mailto:admin@arkco.nyc';"
+                  onClick={() => {
+                    window.location.href = "mailto:admin@arkco.nyc";
+                  }}
                 ></span>
               </div>
             </form>

@@ -1,3 +1,5 @@
+"use client";
+import { useRouter } from "next/navigation";
 import "../../../public/css/style.css";
 import "../../../public/css/books.css";
 import "../../../public/css/colorFan.css";
@@ -13,6 +15,7 @@ export const metadata = {
 };
 
 const About = () => {
+  const router = useRouter();
   return (
     <div>
       <h1
@@ -93,7 +96,9 @@ const About = () => {
           <div className="container" style="flex: 40%">
             <div className="card-column column-0">
               <div
-                onclick="window.location.href = '/allen'"
+                onClick={() => {
+                  router.push("/allen");
+                }}
                 style="cursor: pointer"
                 className="card card-color-0"
               >
