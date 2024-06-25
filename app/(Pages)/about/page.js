@@ -1,5 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
+import Navbar from "app/components/navbar";
+import Footer from "app/components/footer";
 import "../../../public/css/style.css";
 import "../../../public/css/books.css";
 import "../../../public/css/colorFan.css";
@@ -18,6 +20,7 @@ const About = () => {
   const router = useRouter();
   return (
     <div>
+      <Navbar />
       <h1
         id="scroll-arkco"
         style="position: absolute; writing-mode: vertical-lr; font-size: 6vmax; color: #F7931E; transform: rotate(180deg); left: 5.5%; margin-top: 5%"
@@ -133,6 +136,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

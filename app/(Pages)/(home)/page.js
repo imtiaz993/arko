@@ -1,6 +1,8 @@
 "use client";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Navbar from "app/components/navbar";
+import Footer from "app/components/footer";
 import "../../../public/css/style.css";
 import "../../../public/css/books.css";
 import "../../../public/css/colorFan.css";
@@ -19,6 +21,7 @@ const Home = () => {
   const router = useRouter();
   return (
     <div>
+      <Navbar />
       <div
         id="home"
         className="top-containers scrollFade"
@@ -761,6 +764,7 @@ const Home = () => {
         <h1 className="about-outline-text AOT-ark">ARK</h1>
         <h1 className="about-outline-text AOT-co">CO</h1>
       </div>
+      <Footer />
 
       {/* <script type="text/javascript">
   var image = document.getElementById("mainPhoto1");

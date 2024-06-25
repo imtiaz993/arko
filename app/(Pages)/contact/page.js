@@ -1,3 +1,5 @@
+import Navbar from "app/components/navbar";
+import Footer from "app/components/footer";
 import "../../../public/css/style.css";
 import "../../../public/css/books.css";
 import "../../../public/css/colorFan.css";
@@ -15,6 +17,7 @@ export const metadata = {
 const Contact = () => {
   return (
     <div>
+      <Navbar />
       <h1
         id="scroll-arkco"
         style="position: absolute; writing-mode: vertical-lr; font-size: 6vmax; color: #F7931E; transform: rotate(180deg); left: 5.5%; margin-top: 5%"
@@ -263,6 +266,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer />
 
       {/* <script>
   var joinform = document.getElementById('joinform');

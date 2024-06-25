@@ -1,3 +1,5 @@
+import Navbar from "app/components/navbar";
+import Footer from "app/components/footer";
 import "../../../public/css/style.css";
 import "../../../public/css/projects.css";
 import "../../../public/css/blog.css";
@@ -12,9 +14,13 @@ export const metadata = {
 const BlogDetails = () => {
   return (
     <div>
-      {" "}
+      <Navbar />
       <div id="projects" className="flex-container">
-        <div id="scroll-1" className="flex-item-left scrollFade" style="flex: 30%">
+        <div
+          id="scroll-1"
+          className="flex-item-left scrollFade"
+          style="flex: 30%"
+        >
           <h1
             id="scroll-arkco-1"
             style="position: fixed; writing-mode: vertical-lr; font-size: 6vmax; color: #F7931E; transform: rotate(180deg); left: 5%; top:26%"
@@ -57,6 +63,7 @@ const BlogDetails = () => {
           <div id="blog-posts" className="container"></div>
         </div>
       </div>
+      <Footer />
       {/* <script>
 gsap.to(".first", {
   duration: 1.5,

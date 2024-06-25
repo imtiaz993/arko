@@ -1,3 +1,5 @@
+import Navbar from "app/components/navbar";
+import Footer from "app/components/footer";
 import "../../../../public/css/style.css";
 import "../../../../public/css/projects.css";
 import "../../../../public/css/blog.css";
@@ -12,7 +14,9 @@ export const metadata = {
 const BlogDetails = () => {
   return (
     <div>
+      <Navbar />
       <div id="blog-posts"></div>
+      <Footer />
 
       {/* <script>
     gsap.to(".first", {

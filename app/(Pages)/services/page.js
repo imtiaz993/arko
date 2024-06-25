@@ -1,3 +1,5 @@
+import Footer from "app/components/footer";
+import Navbar from "app/components/navbar";
 import "../../../public/css/style.css";
 import "../../../public/css/books.css";
 import "../../../public/css/colorFan.css";
@@ -15,6 +17,7 @@ export const metadata = {
 const Services = () => {
   return (
     <div>
+      <Navbar />
       <h1
         id="scroll-arkco"
         style="position: absolute; writing-mode: vertical-lr; font-size: 6vmax; color: #F7931E; transform: rotate(180deg); left: 5.5%; margin-top: 5%"
@@ -26,7 +29,11 @@ const Services = () => {
         className="flex-container"
         style="margin-top: 10%; margin-bottom: 10%;"
       >
-        <div id="scroll-1" className="flex-item-left scrollFade" style="flex: 30%">
+        <div
+          id="scroll-1"
+          className="flex-item-left scrollFade"
+          style="flex: 30%"
+        >
           <div id="services-header-desktop" style="position: relative;">
             <div style="transform: rotate(-90deg);">
               <h1 style="font-size: 5vmax">SERVICES</h1>
@@ -225,6 +232,7 @@ const Services = () => {
           </div>
         </div>
       </div>
+      <Footer />
 
       {/* <script>
   $(function () {

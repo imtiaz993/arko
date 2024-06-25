@@ -1,3 +1,5 @@
+import Navbar from "app/components/navbar";
+import Footer from "app/components/footer";
 import "../../../public/css/style.css";
 import "../../../public/css/projects.css";
 import "../../../public/css/allen.css";
@@ -12,6 +14,7 @@ export const metadata = {
 const Allen = () => {
   return (
     <div>
+      <Navbar />
       <div id="projects" className="flex-container">
         <div
           id="scroll-1"
@@ -171,6 +174,7 @@ const Allen = () => {
           </div>
         </div>
       </div>
+      <Footer />
       {/* <script>
    
     gsap.to(".first", {
