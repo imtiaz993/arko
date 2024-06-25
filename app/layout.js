@@ -51,7 +51,10 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         ></link>
       </head>
-      <body id="root">
+      <body
+        id="root"
+        style="width: 100vw; position: relative; overflow-x: clip; height: 100%"
+      >
         {children}
         <Calendly />
         <Script src="js/scrollfade-0.1.js" />
