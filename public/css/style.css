@@ -99,6 +99,7 @@ p{
 
 .logo-img {
     height: 6.5vh;
+    width: auto;
     cursor: pointer;
     transition: all .2s ease-in-out;
     position: fixed;
@@ -208,6 +209,7 @@ ul li:nth-child(6) {
 .top-pic-image {
     z-index: -1;
     width: 80%;
+    height: auto;
     margin: auto;
     position: relative;
     top: 40%;
@@ -242,6 +244,7 @@ ul li:nth-child(6) {
 
 #top-circle {
     width: 60%;
+    height: auto;
     position: absolute;
     left: 0;
     top: 20%;
@@ -249,6 +252,7 @@ ul li:nth-child(6) {
 
 #top-ark {
     width: 55%;
+    height: auto;
     position: absolute;
     left: 2%;
     top: 50%;
@@ -280,6 +284,7 @@ ul li:nth-child(6) {
 
 #top-co {
     width: 36%;
+    height: auto;
     position: absolute;
     right: 2%;
     top: 50%;

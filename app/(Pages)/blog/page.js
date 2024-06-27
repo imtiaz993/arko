@@ -19,24 +19,38 @@ const BlogDetails = () => {
         <div
           id="scroll-1"
           className="flex-item-left scrollFade"
-          style="flex: 30%"
+          style={{ flex: "30%" }}
         >
           <h1
             id="scroll-arkco-1"
-            style="position: fixed; writing-mode: vertical-lr; font-size: 6vmax; color: #F7931E; transform: rotate(180deg); left: 5%; top:26%"
+            style={{
+              position: "fixed",
+              writingMode: "vertical-lr",
+              fontSize: "6vmax",
+              color: "#F7931E",
+              transform: "rotate(180deg)",
+              left: "5%",
+              top: "26%",
+            }}
           >
             ARKCO
           </h1>
           <div
             id="project-header-desktop"
-            style="position: relative; margin-top: 65%"
+            style={{ position: "relative", marginTop: "65%" }}
           >
-            <div style="transform: rotate(-90deg);">
-              <h1 style="font-size: 5vmax">BLOG POSTS</h1>
-              <h1 style="font-size: 1.5vmax; margin: -15px 0; text-transform: uppercase">
+            <div style={{ transform: "rotate(-90deg)" }}>
+              <h1 style={{ fontSize: "5vmax" }}>BLOG POSTS</h1>
+              <h1
+                style={{
+                  fontSize: "1.5vmax",
+                  margin: "-15px 0",
+                  textTransform: "uppercase",
+                }}
+              >
                 excellence <br /> in work
               </h1>
-              <p style="font-size: .75vmax; width: 20vmax">
+              <p style={{ fontSize: ".75vmax", width: "20vmax" }}>
                 Excellence in work is a cornerstone of our commitment at Arkco.
                 We strive to consistently deliver outstanding results, combining
                 expertise, innovation, and dedication in every project we
@@ -44,13 +58,13 @@ const BlogDetails = () => {
               </p>
             </div>
           </div>
-          <div id="project-header-mobile" style="margin-top: 10vh">
-            <h1 style="font-size: 6vmax">BLOG POSTS</h1>
-            <h1 style="font-size: 2vmax; text-transform: uppercase">
+          <div id="project-header-mobile" style={{ marginTop: "10vh" }}>
+            <h1 style={{ fontSize: "6vmax" }}>BLOG POSTS</h1>
+            <h1 style={{ fontSize: "2vmax", textTransform: "uppercase" }}>
               excellence <br /> in work
             </h1>
-            <div style=" margin: auto; width: 65%">
-              <p style="font-size: 1.5vmax; ">
+            <div style={{ margin: "auto", width: "65%" }}>
+              <p style={{ fontSize: "1.5vmax" }}>
                 Excellence in work is a cornerstone of our commitment at Arkco.
                 We strive to consistently deliver outstanding results, combining
                 expertise, innovation, and dedication in every project we
@@ -59,7 +73,7 @@ const BlogDetails = () => {
             </div>
           </div>
         </div>
-        <div className="flex-item-right scrollFade" style="flex: 70%;">
+        <div className="flex-item-right scrollFade" style={{ flex: "70%" }}>
           <div id="blog-posts" className="container"></div>
         </div>
       </div>

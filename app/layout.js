@@ -53,7 +53,12 @@ export default function RootLayout({ children }) {
       </head>
       <body
         id="root"
-        style="width: 100vw; position: relative; overflow-x: clip; height: 100%"
+        style={{
+          width: "100vw",
+          position: "relative",
+          overflowX: "clip",
+          height: "100%",
+        }}
       >
         {children}
         <Calendly />

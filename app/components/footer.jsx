@@ -14,12 +14,19 @@ const Footer = () => {
         <Link href="/contact">Contact Us</Link>
         <Link href="/blog">Our Blog</Link>
       </div>
-      <div style="display: flex; flex-direction: row; justify-content: space-evenly; padding: 1%;">
-        <p style="color: #ccc">
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-evenly",
+          padding: "1%",
+        }}
+      >
+        <p style={{ color: "#ccc" }}>
           Copyright © 2024 ArkCo - AZARK - All Rights Reserved.
         </p>
         <p
-          style="cursor: pointer; color: #ccc"
+          style={{ cursor: "pointer", color: "#ccc" }}
           onClick={() => router.push("/privacy-policy")}
         >
           Privacy Policy

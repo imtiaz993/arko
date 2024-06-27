@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Navbar from "app/components/navbar";
 import Footer from "app/components/footer";
 import "../../../public/css/style.css";
@@ -19,39 +20,55 @@ const Allen = () => {
         <div
           id="scroll-1"
           className="flex-item-left scrollFade"
-          style="flex: 30%"
+          style={{ flex: "30%" }}
         >
           <h1
             id="scroll-arkco-1"
-            style="position: fixed; writing-mode: vertical-lr; font-size: 6vmax; color: #F7931E; transform: rotate(180deg); left: 5%; top:5%"
+            style={{
+              position: "fixed",
+              writingMode: "vertical-lr",
+              fontSize: "6vmax",
+              color: "#F7931E",
+              transform: "rotate(180deg)",
+              left: "5%",
+              top: "5%",
+            }}
           >
             Allen Azarkian
           </h1>
           <div
             id="about-header-desktop"
-            style="position: fixed; top: 45%; left: 2%"
+            style={{ position: "fixed", top: "45%", left: "2%" }}
           >
-            <div style="transform: rotate(-90deg);">
-              <h1 style="font-size: 1.5vmax; margin: -15px 0;">
+            <div style={{ transform: "rotate(-90deg)" }}>
+              <h1 style={{ fontSize: "1.5vmax", margin: "-15px 0" }}>
                 Founder/CEO, RA, AIA, Principal Architect
               </h1>
             </div>
           </div>
-          <div id="about-header-mobile" style="margin-top: 10vh">
-            <h1 style="font-size: 6vmax; color: #F7931E;">Allen Azarkian</h1>
-            <h1 style="font-size: 2vmax; ">
+          <div id="about-header-mobile" style={{ marginTop: "10vh" }}>
+            <h1 style={{ fontSize: "6vmax", color: "#F7931E" }}>
+              Allen Azarkian
+            </h1>
+            <h1 style={{ fontSize: "2vmax" }}>
               Founder/CEO, RA, AIA, Principal Architect
             </h1>
           </div>
         </div>
-        <div className="flex-item-right scrollFade" style="flex: 70%">
+        <div className="flex-item-right scrollFade" style={{ flex: "70%" }}>
           <h1 id="section1title">About Allen Azarkian</h1>
 
           <div id="container">
             <div id="floated">
               <div className="card card-color-0">
                 <div className="border"></div>
-                <img src="/img/allen_azarkian.png" alt="allen" />
+                <Image
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  src="/img/allen_azarkian.png"
+                  alt="allen"
+                />
                 <h1>Allen Azarkian</h1>
               </div>
             </div>
@@ -129,45 +146,60 @@ const Allen = () => {
 
           <div id="abbox">
             <div id="business-section">
-              <img
+              <Image
+                width={0}
+                height={0}
+                sizes="100vw"
                 id="azark"
                 src="/img/AZARK_Logo%20%5Binverted%5D.png"
                 alt="azark"
               />
-              <img
+              <Image
+                width={0}
+                height={0}
+                sizes="100vw"
                 id="aapc"
-                onClick={() => {
-                  window.location.href = "https://aapc.nyc";
-                }}
+                // onClick={() => {
+                //   window.location.href = "https://aapc.nyc";
+                // }}
                 src="/img/aapc.png"
                 alt="aapc"
               />
-              <img
+              <Image
+                width={0}
+                height={0}
+                sizes="100vw"
                 id="bvs"
-                onClick={() => {
-                  window.location.href = "https://bvs.nyc";
-                }}
+                // onClick={() => {
+                //   window.location.href = "https://bvs.nyc";
+                // }}
                 src="/img/BVS%20White.png"
                 alt="bvs"
               />
-              <img
+              <Image
+                width={0}
+                height={0}
+                sizes="100vw"
                 id="violerts"
-                onClick={() => {
-                  window.location.href = "https://www.violerts.com";
-                }}
+                // onClick={() => {
+                //   window.location.href = "https://www.violerts.com";
+                // }}
                 src="/img/Violerts%20Logo.png"
                 alt="violerts"
               />
-              <img
+              <Image
+                width={0}
+                height={0}
+                sizes="100vw"
                 id="vps"
-                onClick={() => {
-                  window.location.href = "https://vps.nyc";
-                }}
+                // onClick={() => {
+                //   window.location.href = "https://vps.nyc";
+                // }}
                 src="/img/VPS_Logo.png"
                 alt="vps"
               />
             </div>
-            <h2 id="polartext" style="text-align: center">
+            <h2 id="polartext" style={{ textAlign: "center" }}>
               For additional solutions, explore our network of trusted
               affiliates and partners.
             </h2>

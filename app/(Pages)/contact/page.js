@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Navbar from "app/components/navbar";
 import Footer from "app/components/footer";
 import "../../../public/css/style.css";
@@ -20,37 +21,51 @@ const Contact = () => {
       <Navbar />
       <h1
         id="scroll-arkco"
-        style="position: absolute; writing-mode: vertical-lr; font-size: 6vmax; color: #F7931E; transform: rotate(180deg); left: 5.5%; margin-top: 5%"
+        style={{
+          position: "absolute",
+          writingMode: "vertical-lr",
+          fontSize: "6vmax",
+          color: "#F7931E",
+          transform: "rotate(180deg)",
+          left: "5.5%",
+          marginTop: "5%",
+        }}
       >
         ARKCO
       </h1>
-      <div id="contact" className="flex-container" style="flex: 30%">
+      <div id="contact" className="flex-container" style={{ flex: "30%" }}>
         <div
           id="scroll-3"
           className="flex-item-left scrollFade"
-          style="flex: 30%"
+          style={{ flex: "30%" }}
         >
-          <div id="contact-header-desktop" style="position: relative;">
-            <div style="transform: rotate(-90deg);">
-              <h1 style="font-size: 5vmax">CONTACT</h1>
-              <h1 style="font-size: 1.5vmax; margin: -15px 0; cursor: pointer">
+          <div id="contact-header-desktop" style={{ position: "relative" }}>
+            <div style={{ transform: "rotate(-90deg)" }}>
+              <h1 style={{ fontSize: "5vmax" }}>CONTACT</h1>
+              <h1
+                style={{
+                  fontSize: "1.5vmax",
+                  margin: "-15px 0",
+                  cursor: "pointer",
+                }}
+              >
                 <b
-                  onClick={() => {
-                    window.location.href = "tel:212-547-9000";
-                  }}
+                // onClick={() => {
+                //   window.location.href = "tel:212-547-9000";
+                // }}
                 >
                   CALL US
                 </b>{" "}
                 <br />{" "}
                 <b
-                  onClick={() => {
-                    window.location.href = "mailto:admin@arkco.nyc";
-                  }}
+                // onClick={() => {
+                //   window.location.href = "mailto:admin@arkco.nyc";
+                // }}
                 >
                   EMAIL US
                 </b>
               </h1>
-              <p style="font-size: .75vmax; width: 20vmax">
+              <p style={{ fontSize: ".75vmax", width: "20vmax" }}>
                 We invite you to learn more about us and discover the vast ways
                 that we can assist you. We look forward to the opportunity to
                 discuss potential collaborations and build mutually beneficial
@@ -58,13 +73,13 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div id="contact-header-mobile" style="margin-top: 15vh">
-            <h1 style="font-size: 6vmax">CONTACT</h1>
-            <h1 style="font-size: 2vmax; ">
+          <div id="contact-header-mobile" style={{ marginTop: "15vh" }}>
+            <h1 style={{ fontSize: "6vmax" }}>CONTACT</h1>
+            <h1 style={{ fontSize: "2vmax" }}>
               CALL US <br /> EMAIL US
             </h1>
-            <div style=" margin: auto; width: 65%">
-              <p style="font-size: 1.5vmax; ">
+            <div style={{ margin: "auto", width: "65%" }}>
+              <p style={{ fontSize: "1.5vmax" }}>
                 We invite you to learn more about us and discover the vast ways
                 that we can assist you. We look forward to the opportunity to
                 discuss potential collaborations and build mutually beneficial
@@ -73,7 +88,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="flex-item-right scrollFade" style="flex: 70%">
+        <div className="flex-item-right scrollFade" style={{ flex: "70%" }}>
           <div>
             <form
               className="form contact"
@@ -83,31 +98,64 @@ const Contact = () => {
             >
               <input type="hidden" name="_next" value="https://www.arkco.nyc" />
               <input type="hidden" name="_captcha" value="true" />
-              <input type="text" name="_honey" style="display:none" />
+              <input type="text" name="_honey" style={{ display: "none" }} />
 
-              <img
+              <Image
+                width={0}
+                height={0}
+                sizes="100vw"
                 loading="lazy"
                 src="/img/pencil.png"
-                style="position: absolute; left: -125px; height: 100%; rotate: 2deg; -webkit-filter: drop-shadow(5px 5px 5px #222); filter: drop-shadow(5px 5px 5px #222);"
+                style={{
+                  position: "absolute",
+                  left: "-125px",
+                  width: "auto",
+                  height: "100%",
+                  rotate: "2deg",
+                  WebkitFilter: "drop-shadow(5px 5px 5px #222)",
+                  filter: "drop-shadow(5px 5px 5px #222)",
+                }}
                 draggable="false"
                 alt="project"
               />
-              <img
+              <Image
+                width={0}
+                height={0}
+                sizes="100vw"
                 loading="lazy"
                 className="clipboard"
                 src="/img/clipboard.png"
                 draggable="false"
-                style="position:absolute; width: 40%; top: -15%; left: 0; right: 0; margin: auto"
+                style={{
+                  position: "absolute",
+                  width: "40%",
+                  height: "auto",
+                  top: "-15%",
+                  left: "0",
+                  right: "0",
+                  margin: "auto",
+                }}
                 alt="project"
               />
               <div
                 className="contact-top"
-                style="display: flex; flex-direction: row; justify-content: space-between; position: relative; z-index: 90"
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                  position: "relative",
+                  zIndex: "90",
+                }}
               >
                 <h2>CONTACT US</h2>
                 <h2
                   id="joinform"
-                  style="border: none; text-align: right; color: black; cursor: pointer"
+                  style={{
+                    border: "none",
+                    textAlign: "right",
+                    color: "black",
+                    cursor: "pointer",
+                  }}
                 >
                   JOIN US
                 </h2>
@@ -137,7 +185,11 @@ const Contact = () => {
               <button
                 type="submit"
                 className="button"
-                style="position: absolute; right: 10%; transform: scale(.8)"
+                style={{
+                  position: "absolute",
+                  right: "10%",
+                  transform: "scale(.8)",
+                }}
               >
                 Send Message
               </button>
@@ -145,24 +197,24 @@ const Contact = () => {
               <div className="ribbon-contact">
                 <span
                   className="fa fa-location-arrow"
-                  onClick={() => {
-                    window.open(
-                      "https://maps.app.goo.gl/3S2kgXWk48vREADu9",
-                      "_blank"
-                    );
-                  }}
+                  // onClick={() => {
+                  //   window.open(
+                  //     "https://maps.app.goo.gl/3S2kgXWk48vREADu9",
+                  //     "_blank"
+                  //   );
+                  // }}
                 ></span>
                 <span
                   className="fa fa-phone"
-                  onClick={() => {
-                    window.location.href = "tel:212-547-9000";
-                  }}
+                  // onClick={() => {
+                  //   window.location.href = "tel:212-547-9000";
+                  // }}
                 ></span>
                 <span
                   className="fa fa-envelope"
-                  onClick={() => {
-                    window.location.href = "mailto:admin@arkco.nyc";
-                  }}
+                  // onClick={() => {
+                  //   window.location.href = "mailto:admin@arkco.nyc";
+                  // }}
                 ></span>
               </div>
             </form>
@@ -175,39 +227,72 @@ const Contact = () => {
             >
               <input type="hidden" name="_next" value="https://www.aapc.nyc" />
               <input type="hidden" name="_captcha" value="true" />
-              <input type="text" name="_honey" style="display:none" />
+              <input type="text" name="_honey" style={{ display: "none" }} />
               <input
                 type="hidden"
                 name="_subject"
                 value="ArkCo - Job Application Submission"
               />
 
-              <img
+              <Image
+                width={0}
+                height={0}
+                sizes="100vw"
                 loading="lazy"
                 src="/img/pencil.png"
-                style="position: absolute; left: -125px; height: 100%; rotate: 2deg; -webkit-filter: drop-shadow(5px 5px 5px #222); filter: drop-shadow(5px 5px 5px #222);"
+                style={{
+                  position: "absolute",
+                  left: "-125px",
+                  height: "100%",
+                  width: "auto",
+                  rotate: "2deg",
+                  WebkitFilter: "drop-shadow(5px 5px 5px #222)",
+                  filter: "drop-shadow(5px 5px 5px #222)",
+                }}
                 draggable="false"
                 alt="project"
               />
-              <img
+              <Image
+                width={0}
+                height={0}
+                sizes="100vw"
                 loading="lazy"
                 className="clipboard"
                 src="/img/clipboard.png"
                 draggable="false"
-                style="position:absolute; width: 40%; top: -15%; left: 0; right: 0; margin: auto"
+                style={{
+                  position: "absolute",
+                  width: "40%",
+                  height: "auto",
+                  top: "-15%",
+                  left: "0",
+                  right: "0",
+                  margin: "auto",
+                }}
                 alt="project"
               />
               <div
                 className="contact-top"
-                style="display: flex; flex-direction: row; justify-content: space-between; position: relative; z-index: 90"
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                  position: "relative",
+                  zIndex: "90",
+                }}
               >
                 <h2
                   id="contactform"
-                  style="border: none; text-align: left; color: black; cursor: pointer"
+                  style={{
+                    border: "none",
+                    textAlign: "left",
+                    color: "black",
+                    cursor: "pointer",
+                  }}
                 >
                   CONTACT US
                 </h2>
-                <h2 style="text-align: right">JOIN US</h2>
+                <h2 style={{ textAlign: "right" }}>JOIN US</h2>
               </div>
               <p type="NAME:">
                 <input placeholder="Write your name here..." required />
@@ -234,7 +319,11 @@ const Contact = () => {
               <button
                 type="submit"
                 className="button"
-                style="position: absolute; right: 10%; transform: scale(.8)"
+                style={{
+                  position: "absolute",
+                  right: "10%",
+                  transform: "scale(.8)",
+                }}
               >
                 Apply
               </button>
@@ -242,24 +331,24 @@ const Contact = () => {
               <div className="ribbon-contact">
                 <span
                   className="fa fa-location-arrow"
-                  onClick={() => {
-                    window.open(
-                      "https://maps.app.goo.gl/3S2kgXWk48vREADu9",
-                      "_blank"
-                    );
-                  }}
+                  // onClick={() => {
+                  //   window.open(
+                  //     "https://maps.app.goo.gl/3S2kgXWk48vREADu9",
+                  //     "_blank"
+                  //   );
+                  // }}
                 ></span>
                 <span
                   className="fa fa-phone"
-                  onClick={() => {
-                    window.location.href = "tel:212-547-9000";
-                  }}
+                  // onClick={() => {
+                  //   window.location.href = "tel:212-547-9000";
+                  // }}
                 ></span>
                 <span
                   className="fa fa-envelope"
-                  onClick={() => {
-                    window.location.href = "mailto:admin@arkco.nyc";
-                  }}
+                  // onClick={() => {
+                  //   window.location.href = "mailto:admin@arkco.nyc";
+                  // }}
                 ></span>
               </div>
             </form>

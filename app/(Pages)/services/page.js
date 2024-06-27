@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Footer from "app/components/footer";
 import Navbar from "app/components/navbar";
 import "../../../public/css/style.css";
@@ -20,28 +21,42 @@ const Services = () => {
       <Navbar />
       <h1
         id="scroll-arkco"
-        style="position: absolute; writing-mode: vertical-lr; font-size: 6vmax; color: #F7931E; transform: rotate(180deg); left: 5.5%; margin-top: 5%"
+        style={{
+          position: "absolute",
+          writingMode: "vertical-lr",
+          fontSize: "6vmax",
+          color: "#F7931E",
+          transform: "rotate(180deg)",
+          left: "5.5%",
+          marginTop: "5%",
+        }}
       >
         ARKCO
       </h1>
       <div
         id="services"
         className="flex-container"
-        style="margin-top: 10%; margin-bottom: 10%;"
+        style={{ marginTop: "10%", marginBottom: "10%" }}
       >
         <div
           id="scroll-1"
           className="flex-item-left scrollFade"
-          style="flex: 30%"
+          style={{ flex: "30%" }}
         >
-          <div id="services-header-desktop" style="position: relative;">
-            <div style="transform: rotate(-90deg);">
-              <h1 style="font-size: 5vmax">SERVICES</h1>
-              <h1 style="font-size: 1.5vmax; margin: -15px 0; text-transform: uppercase">
+          <div id="services-header-desktop" style={{ position: "relative" }}>
+            <div style={{ transform: "rotate(-90deg)" }}>
+              <h1 style={{ fontSize: "5vmax" }}>SERVICES</h1>
+              <h1
+                style={{
+                  fontSize: "1.5vmax",
+                  margin: "-15px 0",
+                  textTransform: "uppercase",
+                }}
+              >
                 Forging connections by building bridges across every industry
                 gap
               </h1>
-              <p style="font-size: .75vmax; width: 25vmax">
+              <p style={{ fontSize: ".75vmax", width: "25vmax" }}>
                 In construction, we employ advanced methodologies to ensure
                 structural integrity, safety, and aesthetic appeal. Our
                 demolition services are carried out with precision, minimizing
@@ -58,12 +73,12 @@ const Services = () => {
             </div>
           </div>
           <div id="services-header-mobile">
-            <h1 style="font-size: 6vmax">SERVICES</h1>
-            <h1 style="font-size: 2vmax; text-transform: uppercase">
+            <h1 style={{ fontSize: "6vmax" }}>SERVICES</h1>
+            <h1 style={{ fontSize: "2vmax", textTransform: "uppercase" }}>
               Forging connections by building bridges across every industry gap
             </h1>
-            <div style=" margin: auto; width: 65%">
-              <p style="font-size: 1.5vmax; ">
+            <div style={{ margin: "auto", width: "65%" }}>
+              <p style={{ fontSize: "1.5vmax" }}>
                 In construction, we employ advanced methodologies to ensure
                 structural integrity, safety, and aesthetic appeal. Our
                 demolition services are carried out with precision, minimizing
@@ -80,7 +95,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="flex-item-right scrollFade" style="flex: 70%">
+        <div className="flex-item-right scrollFade" style={{ flex: "70%" }}>
           <div className="main">
             <ul id="bk-list" className="bk-list clearfix">
               <li id="book-6">
@@ -88,19 +103,22 @@ const Services = () => {
                   <div className="bk-front bk-bookview">
                     <div
                       className="book-cover"
-                      style="border-radius: 0 20px 20px 0;"
+                      style={{ borderRadius: "0 20px 20px 0" }}
                     >
                       <div className="book-spine-front"></div>
                       <div className="band"></div>
                       <h1
                         className="book-title"
-                        style="color: transparent; user-select: none"
+                        style={{ color: "transparent", userSelect: "none" }}
                         draggable="false"
                       >
                         Our Services
                       </h1>
                       <div className="cardboard-front"></div>
-                      <img
+                      <Image
+                        width={0}
+                        height={0}
+                        sizes="100vw"
                         loading="lazy"
                         src="/img/logobook.png"
                         className="book-cover-picture"
@@ -109,61 +127,63 @@ const Services = () => {
                     </div>
                     <div
                       className="bk-cover-back"
-                      style="border-radius: 20px 0 0 20px;"
+                      style={{ borderRadius: "20px 0 0 20px" }}
                     >
                       <div
                         className="cover-back-cardboard"
-                        style="border-radius: 20px 0 0 20px"
+                        style={{ borderRadius: "20px 0 0 20px" }}
                       ></div>
                     </div>
                   </div>
                   <div
                     className="bk-page bk-bookview"
-                    style="border-radius: 0 20px 20px 0;"
+                    style={{ borderRadius: "0 20px 20px 0" }}
                   >
                     <div className="bk-content bk-content-current">
-                      <h3 style="color: black">Design Proposals</h3>
-                      <p style="font-family: 'Tenorite', sans-serif;">
+                      <h3 style={{ color: "black" }}>Design Proposals</h3>
+                      <p style={{ fontFamily: "'Tenorite', sans-serif" }}>
                         Crafting comprehensive proposals outlining conceptual
                         design ideas for client review and consideration.
                       </p>
                     </div>
                     <div className="bk-content">
-                      <h3 style="color: black">Schematic Design</h3>
-                      <p style="font-family: 'Tenorite', sans-serif;">
+                      <h3 style={{ color: "black" }}>Schematic Design</h3>
+                      <p style={{ fontFamily: "'Tenorite', sans-serif" }}>
                         Developing preliminary sketches and plans to illustrate
                         the overall design concept and spatial arrangement.
                       </p>
                     </div>
                     <div className="bk-content">
-                      <h3 style="color: black">As-Built Condition Reviews</h3>
-                      <p style="font-family: 'Tenorite', sans-serif;">
+                      <h3 style={{ color: "black" }}>
+                        As-Built Condition Reviews
+                      </h3>
+                      <p style={{ fontFamily: "'Tenorite', sans-serif" }}>
                         Assessing and documenting the current state of a
                         structure or space to inform design modifications or
                         renovations.
                       </p>
                     </div>
                     <div className="bk-content">
-                      <h3 style="color: black">Interior Design</h3>
-                      <p style="font-family: 'Tenorite', sans-serif;">
+                      <h3 style={{ color: "black" }}>Interior Design</h3>
+                      <p style={{ fontFamily: "'Tenorite', sans-serif" }}>
                         Creating aesthetically pleasing and functional interior
                         spaces through thoughtful selection of colors,
                         materials, and furnishings.
                       </p>
                     </div>
                     <div className="bk-content">
-                      <h3 style="color: black">
+                      <h3 style={{ color: "black" }}>
                         Floor Plan and Design Documents
                       </h3>
-                      <p style="font-family: 'Tenorite', sans-serif;">
+                      <p style={{ fontFamily: "'Tenorite', sans-serif" }}>
                         Producing detailed floor plans and design documentation
                         that serve as a blueprint for construction and project
                         execution.
                       </p>
                     </div>
                     <div className="bk-content">
-                      <h3 style="color: black">3D Visualization</h3>
-                      <p style="font-family: 'Tenorite', sans-serif;">
+                      <h3 style={{ color: "black" }}>3D Visualization</h3>
+                      <p style={{ fontFamily: "'Tenorite', sans-serif" }}>
                         {" "}
                         Utilizing advanced technologies to create immersive
                         three-dimensional visual representations of design
@@ -172,26 +192,28 @@ const Services = () => {
                     </div>
 
                     <div className="bk-content">
-                      <h3 style="color: black">
+                      <h3 style={{ color: "black" }}>
                         Construction Management and Administration
                       </h3>
-                      <p style="font-family: 'Tenorite', sans-serif;">
+                      <p style={{ fontFamily: "'Tenorite', sans-serif" }}>
                         Overseeing the entire construction process, from
                         planning and coordination to execution and completion,
                         ensuring seamless project delivery.
                       </p>
                     </div>
                     <div className="bk-content">
-                      <h3 style="color: black">Project Planning</h3>
-                      <p style="font-family: 'Tenorite', sans-serif;">
+                      <h3 style={{ color: "black" }}>Project Planning</h3>
+                      <p style={{ fontFamily: "'Tenorite', sans-serif" }}>
                         Developing comprehensive plans outlining project scope,
                         timelines, and resource requirements to guide successful
                         project execution.
                       </p>
                     </div>
                     <div className="bk-content">
-                      <h3 style="color: black">Procurement and Delivery</h3>
-                      <p style="font-family: 'Tenorite', sans-serif;">
+                      <h3 style={{ color: "black" }}>
+                        Procurement and Delivery
+                      </h3>
+                      <p style={{ fontFamily: "'Tenorite', sans-serif" }}>
                         Managing the sourcing and delivery of materials,
                         equipment, and services essential for project
                         implementation.
@@ -201,9 +223,17 @@ const Services = () => {
                   </div>
                   <div
                     className="bk-back bk-bookback"
-                    style="border-radius: 20px 0 0 20px;"
+                    style={{ borderRadius: "20px 0 0 20px" }}
                   >
-                    <div style="height: 100%; width: 10%; position: absolute; background: #222222; right: 0"></div>
+                    <div
+                      style={{
+                        height: "100%",
+                        width: "10%",
+                        position: "absolute",
+                        background: "#222222",
+                        right: "0",
+                      }}
+                    ></div>
                     <div className="back-cardboard"></div>
                     <p className="back-text">
                       FORGING CONNECTIONS BY BUILDING BRIDGES ACROSS EVERY
@@ -213,7 +243,7 @@ const Services = () => {
                   <div className="bk-right"></div>
                   <div className="bk-left">
                     <h2>
-                      <span style="font-weight: bold; color: #000">
+                      <span style={{ fontWeight: "bold", color: "#000" }}>
                         Our Services
                       </span>
                       <span>

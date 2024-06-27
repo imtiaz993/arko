@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Navbar from "app/components/navbar";
@@ -25,29 +26,46 @@ const Home = () => {
       <div
         id="home"
         className="top-containers scrollFade"
-        style="overflow-x: hidden"
+        style={{ overflowX: "hidden" }}
       >
         <div>
           <div id="fix">
             <div className="topper-logo">
-              <img
+              <Image
+                width={0}
+                height={0}
+                sizes="100vw"
                 loading="lazy"
                 src="/img/Circle_Logo.png"
                 id="top-circle"
                 alt="circle"
               />
-              <img
+              <Image
+                width={0}
+                height={0}
+                sizes="100vw"
                 loading="lazy"
                 src="/img/ARK_Logo.png"
                 id="top-ark"
                 alt="ark"
               />
-              <img loading="lazy" src="/img/CO_Logo.png" id="top-co" alt="co" />
+              <Image
+                width={0}
+                height={0}
+                sizes="100vw"
+                loading="lazy"
+                src="/img/CO_Logo.png"
+                id="top-co"
+                alt="co"
+              />
             </div>
           </div>
 
           <div className="top-pic">
-            <img
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
               loading="lazy"
               className="top-pic-image"
               src="/img/hero_image.jpeg"
@@ -61,23 +79,37 @@ const Home = () => {
         </div>
       </div>
 
-      <div id="side-scroll" style="position: relative;">
+      <div id="side-scroll" style={{ position: "relative" }}>
         <h1
           id="scroll-arkco"
-          style="position: absolute; writing-mode: vertical-lr; font-size: 6vmax; color: #F7931E; transform: rotate(180deg); left: 5.5%; margin-top: 5%"
+          style={{
+            position: "absolute",
+            writingMode: "vertical-lr",
+            fontSize: "6vmax",
+            color: "#F7931E",
+            transform: "rotate(180deg)",
+            left: "5.5%",
+            marginTop: "5%",
+          }}
         >
           ARKCO
         </h1>
         <div id="about" className="flex-container">
-          <div className="flex-item-left scrollFade" style="flex: 30%">
-            <div id="about-header-desktop" style="position: relative;">
-              <div style="transform: rotate(-90deg);">
-                <h1 style="font-size: 5vmax">ABOUT US</h1>
-                <h1 style="font-size: 1.5vmax; margin: -15px 0; text-transform: uppercase">
+          <div className="flex-item-left scrollFade" style={{ flex: "30%" }}>
+            <div id="about-header-desktop" style={{ position: "relative" }}>
+              <div style={{ transform: "rotate(-90deg)" }}>
+                <h1 style={{ fontSize: "5vmax" }}>ABOUT US</h1>
+                <h1
+                  style={{
+                    fontSize: "1.5vmax",
+                    margin: "-15px 0",
+                    textTransform: "uppercase",
+                  }}
+                >
                   procuring efficiency for <br />
                   your construction needs
                 </h1>
-                <p style="font-size: .75vmax; width: 20vmax">
+                <p style={{ fontSize: ".75vmax", width: "20vmax" }}>
                   Arkco, a distinguished entity within a conglomerate
                   specializing in construction and project management, takes
                   pride in its proficient team. Our adept professionals enable
@@ -88,13 +120,13 @@ const Home = () => {
               </div>
             </div>
             <div id="about-header-mobile">
-              <h1 style="font-size: 6vmax">ABOUT US</h1>
-              <h1 style="font-size: 2vmax; text-transform: uppercase">
+              <h1 style={{ fontSize: "6vmax" }}>ABOUT US</h1>
+              <h1 style={{ fontSize: "2vmax", textTransform: "uppercase" }}>
                 procuring efficiency for <br />
                 your construction needs
               </h1>
-              <div style=" margin: auto; width: 65%">
-                <p style="font-size: 1.5vmax; ">
+              <div style={{ margin: "auto", width: "65%" }}>
+                <p style={{ fontSize: "1.5vmax" }}>
                   Arkco, a distinguished entity within a conglomerate
                   specializing in construction and project management, takes
                   pride in its proficient team. Our adept professionals enable
@@ -107,15 +139,31 @@ const Home = () => {
           </div>
           <div
             className="flex-item-right scrollFade flex-container"
-            style="flex: 70%; padding-bottom: 10vh"
+            style={{ flex: "70%", paddingBottom: "10vh" }}
           >
-            <div className="service-box" style="flex: 60%">
+            <div className="service-box" style={{ flex: "60%" }}>
               <div className="service-card" id="servicecard1">
-                <h1 style="position: absolute; left: 0; right: 0; margin: auto; z-index: 10; color: black">
+                <h1
+                  style={{
+                    position: "absolute",
+                    left: "0",
+                    right: "0",
+                    margin: "auto",
+                    zIndex: "10",
+                    color: "black",
+                  }}
+                >
                   ARKCO
                 </h1>
                 <div className="imgBox">
-                  <img loading="lazy" src="/img/about.png" alt="some image" />
+                  <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    loading="lazy"
+                    src="/img/about.png"
+                    alt="some image"
+                  />
                 </div>
                 <div className="details">
                   <h2>
@@ -139,17 +187,20 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="container" style="flex: 40%">
+            <div className="container" style={{ flex: "40%" }}>
               <div className="card-column column-0">
                 <div
                   onClick={() => {
                     router.push("/allen");
                   }}
-                  style="cursor: pointer"
+                  style={{ cursor: "pointer" }}
                   className="card card-color-0"
                 >
                   <div className="border"></div>
-                  <img
+                  <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
                     loading="lazy"
                     src="/img/allen_azarkian.png"
                     alt="allen"
@@ -162,7 +213,10 @@ const Home = () => {
               <div className="card-column column-1">
                 <div className="card card-color-1">
                   <div className="border"></div>
-                  <img
+                  <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
                     loading="lazy"
                     src="https://www.aapc.nyc/img/pierre.png"
                     alt="teammate"
@@ -173,7 +227,14 @@ const Home = () => {
                 </div>
                 <div className="card card-color-1">
                   <div className="border"></div>
-                  <img loading="lazy" src="/img/maggie.png" alt="teammate" />
+                  <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    loading="lazy"
+                    src="/img/maggie.png"
+                    alt="teammate"
+                  />
                   <h1>
                     <b>Maggie Kay Croke</b> <br />
                     Junior Designer
@@ -188,16 +249,22 @@ const Home = () => {
           <div
             id="scroll-1"
             className="flex-item-left scrollFade"
-            style="flex: 30%"
+            style={{ flex: "30%" }}
           >
-            <div id="services-header-desktop" style="position: relative;">
-              <div style="transform: rotate(-90deg);">
-                <h1 style="font-size: 5vmax">SERVICES</h1>
-                <h1 style="font-size: 1.5vmax; margin: -15px 0; text-transform: uppercase">
+            <div id="services-header-desktop" style={{ position: "relative" }}>
+              <div style={{ transform: "rotate(-90deg)" }}>
+                <h1 style={{ fontSize: "5vmax" }}>SERVICES</h1>
+                <h1
+                  style={{
+                    fontSize: "1.5vmax",
+                    margin: "-15px 0",
+                    textTransform: "uppercase",
+                  }}
+                >
                   Forging connections by building bridges across every industry
                   gap
                 </h1>
-                <p style="font-size: .75vmax; width: 25vmax">
+                <p style={{ fontSize: ".75vmax", width: "25vmax" }}>
                   In construction, we employ advanced methodologies to ensure
                   structural integrity, safety, and aesthetic appeal. Our
                   demolition services are carried out with precision, minimizing
@@ -214,13 +281,13 @@ const Home = () => {
               </div>
             </div>
             <div id="services-header-mobile">
-              <h1 style="font-size: 6vmax">SERVICES</h1>
-              <h1 style="font-size: 2vmax; text-transform: uppercase">
+              <h1 style={{ fontSize: "6vmax" }}>SERVICES</h1>
+              <h1 style={{ fontSize: "2vmax", textTransform: "uppercase" }}>
                 Forging connections by building bridges across every industry
                 gap
               </h1>
-              <div style=" margin: auto; width: 65%">
-                <p style="font-size: 1.5vmax; ">
+              <div style={{ margin: "auto", width: "65%" }}>
+                <p style={{ fontSize: "1.5vmax" }}>
                   In construction, we employ advanced methodologies to ensure
                   structural integrity, safety, and aesthetic appeal. Our
                   demolition services are carried out with precision, minimizing
@@ -237,7 +304,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="flex-item-right scrollFade" style="flex: 70%">
+          <div className="flex-item-right scrollFade" style={{ flex: "70%" }}>
             <div className="main">
               <ul id="bk-list" className="bk-list clearfix">
                 <li id="book-6">
@@ -245,19 +312,22 @@ const Home = () => {
                     <div className="bk-front bk-bookview">
                       <div
                         className="book-cover"
-                        style="border-radius: 0 20px 20px 0;"
+                        style={{ borderRadius: "0 20px 20px 0" }}
                       >
                         <div className="book-spine-front"></div>
                         <div className="band"></div>
                         <h1
                           className="book-title"
-                          style="color: transparent; user-select: none"
+                          style={{ color: "transparent", userSelect: "none" }}
                           draggable="false"
                         >
                           Our Services
                         </h1>
                         <div className="cardboard-front"></div>
-                        <img
+                        <Image
+                          width={0}
+                          height={0}
+                          sizes="100vw"
                           loading="lazy"
                           src="/img/logobook.png"
                           className="book-cover-picture"
@@ -266,98 +336,102 @@ const Home = () => {
                       </div>
                       <div
                         className="bk-cover-back"
-                        style="border-radius: 20px 0 0 20px;"
+                        style={{ borderRadius: "20px 0 0 20px" }}
                       >
                         <div
                           className="cover-back-cardboard"
-                          style="border-radius: 20px 0 0 20px"
+                          style={{ borderRadius: "20px 0 0 20px" }}
                         ></div>
                       </div>
                     </div>
                     <div
                       className="bk-page bk-bookview"
-                      style="border-radius: 0 20px 20px 0;"
+                      style={{ borderRadius: "0 20px 20px 0" }}
                     >
                       <div className="bk-content bk-content-current">
-                        <h3 style="color: black">Design Proposals</h3>
-                        <p style="font-family: 'Tenorite', sans-serif;">
+                        <h3 style={{ color: "black" }}>Design Proposals</h3>
+                        <p style={{ fontFamily: "'Tenorite', sans-serif" }}>
                           Crafting comprehensive proposals outlining conceptual
                           design ideas for client review and consideration.
                         </p>
                       </div>
                       <div className="bk-content">
-                        <h3 style="color: black">Schematic Design</h3>
-                        <p style="font-family: 'Tenorite', sans-serif;">
+                        <h3 style={{ color: "black" }}>Schematic Design</h3>
+                        <p style={{ fontFamily: "'Tenorite', sans-serif" }}>
                           Developing preliminary sketches and plans to
                           illustrate the overall design concept and spatial
                           arrangement.
                         </p>
                       </div>
                       <div className="bk-content">
-                        <h3 style="color: black">As-Built Condition Reviews</h3>
-                        <p style="font-family: 'Tenorite', sans-serif;">
+                        <h3 style={{ color: "black" }}>
+                          As-Built Condition Reviews
+                        </h3>
+                        <p style={{ fontFamily: "'Tenorite', sans-serif" }}>
                           Assessing and documenting the current state of a
                           structure or space to inform design modifications or
                           renovations.
                         </p>
                       </div>
                       <div className="bk-content">
-                        <h3 style="color: black">Interior Design</h3>
-                        <p style="font-family: 'Tenorite', sans-serif;">
+                        <h3 style={{ color: "black" }}>Interior Design</h3>
+                        <p style={{ fontFamily: "'Tenorite', sans-serif" }}>
                           Creating aesthetically pleasing and functional
                           interior spaces through thoughtful selection of
                           colors, materials, and furnishings.
                         </p>
                       </div>
                       <div className="bk-content">
-                        <h3 style="color: black">
+                        <h3 style={{ color: "black" }}>
                           Floor Plan and Design Documents
                         </h3>
-                        <p style="font-family: 'Tenorite', sans-serif;">
+                        <p style={{ fontFamily: "'Tenorite', sans-serif" }}>
                           Producing detailed floor plans and design
                           documentation that serve as a blueprint for
                           construction and project execution.
                         </p>
                       </div>
                       <div className="bk-content">
-                        <h3 style="color: black">3D Visualization</h3>
-                        <p style="font-family: 'Tenorite', sans-serif;">
+                        <h3 style={{ color: "black" }}>3D Visualization</h3>
+                        <p style={{ fontFamily: "'Tenorite', sans-serif" }}>
                           {" "}
                           Utilizing advanced technologies to create immersive
                           three-dimensional visual representations of design
                           concepts for better client understanding.
                         </p>
                       </div>
-                      <div className="bk-content" style="display: none">
-                        <h3 style="color: black">
+                      <div className="bk-content" style={{ display: "none" }}>
+                        <h3 style={{ color: "black" }}>
                           General Construction | Demolition
                         </h3>
-                        <p style="font-family: 'Tenorite', sans-serif;">
+                        <p style={{ fontFamily: "'Tenorite', sans-serif" }}>
                           Executing construction and demolition activities with
                           precision and adherence to safety standards.
                         </p>
                       </div>
                       <div className="bk-content">
-                        <h3 style="color: black">
+                        <h3 style={{ color: "black" }}>
                           Construction Management and Administration
                         </h3>
-                        <p style="font-family: 'Tenorite', sans-serif;">
+                        <p style={{ fontFamily: "'Tenorite', sans-serif" }}>
                           Overseeing the entire construction process, from
                           planning and coordination to execution and completion,
                           ensuring seamless project delivery.
                         </p>
                       </div>
                       <div className="bk-content">
-                        <h3 style="color: black">Project Planning</h3>
-                        <p style="font-family: 'Tenorite', sans-serif;">
+                        <h3 style={{ color: "black" }}>Project Planning</h3>
+                        <p style={{ fontFamily: "'Tenorite', sans-serif" }}>
                           Developing comprehensive plans outlining project
                           scope, timelines, and resource requirements to guide
                           successful project execution.
                         </p>
                       </div>
                       <div className="bk-content">
-                        <h3 style="color: black">Procurement and Delivery</h3>
-                        <p style="font-family: 'Tenorite', sans-serif;">
+                        <h3 style={{ color: "black" }}>
+                          Procurement and Delivery
+                        </h3>
+                        <p style={{ fontFamily: "'Tenorite', sans-serif" }}>
                           Managing the sourcing and delivery of materials,
                           equipment, and services essential for project
                           implementation.
@@ -367,9 +441,17 @@ const Home = () => {
                     </div>
                     <div
                       className="bk-back bk-bookback"
-                      style="border-radius: 20px 0 0 20px;"
+                      style={{ borderRadius: "20px 0 0 20px" }}
                     >
-                      <div style="height: 100%; width: 10%; position: absolute; background: #222222; right: 0"></div>
+                      <div
+                        style={{
+                          height: "100%",
+                          width: "10%",
+                          position: "absolute",
+                          background: "#222222",
+                          right: "0",
+                        }}
+                      ></div>
                       <div className="back-cardboard"></div>
                       <p className="back-text">
                         FORGING CONNECTIONS BY BUILDING BRIDGES ACROSS EVERY
@@ -379,7 +461,7 @@ const Home = () => {
                     <div className="bk-right"></div>
                     <div className="bk-left">
                       <h2>
-                        <span style="font-weight: bold; color: #000">
+                        <span style={{ fontWeight: "bold", color: "#000" }}>
                           Our Services
                         </span>
                         <span>
@@ -403,18 +485,24 @@ const Home = () => {
           <div
             id="scroll-2"
             className="flex-item-left scrollFade"
-            style="flex: 30%; position: relative"
+            style={{ flex: "30%", position: "relative" }}
           >
             <div
               id="project-header-desktop"
-              style="position: relative; margin-top: 65%"
+              style={{ position: "relative", marginTop: "65%" }}
             >
-              <div style="transform: rotate(-90deg);">
-                <h1 style="font-size: 5vmax">PROJECTS</h1>
-                <h1 style="font-size: 1.5vmax; margin: -15px 0; text-transform: uppercase">
+              <div style={{ transform: "rotate(-90deg)" }}>
+                <h1 style={{ fontSize: "5vmax" }}>PROJECTS</h1>
+                <h1
+                  style={{
+                    fontSize: "1.5vmax",
+                    margin: "-15px 0",
+                    textTransform: "uppercase",
+                  }}
+                >
                   excellence <br /> in work
                 </h1>
-                <p style="font-size: .75vmax; width: 20vmax">
+                <p style={{ fontSize: ".75vmax", width: "20vmax" }}>
                   Excellence in work is a cornerstone of our commitment at
                   Arkco. We strive to consistently deliver outstanding results,
                   combining expertise, innovation, and dedication in every
@@ -422,13 +510,13 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div id="project-header-mobile" style="margin-top: 10vh">
-              <h1 style="font-size: 6vmax">PROJECTS</h1>
-              <h1 style="font-size: 2vmax; text-transform: uppercase">
+            <div id="project-header-mobile" style={{ marginTop: "10vh" }}>
+              <h1 style={{ fontSize: "6vmax" }}>PROJECTS</h1>
+              <h1 style={{ fontSize: "2vmax", textTransform: "uppercase" }}>
                 excellence <br /> in work
               </h1>
-              <div style=" margin: auto; width: 65%">
-                <p style="font-size: 1.5vmax; ">
+              <div style={{ margin: "auto", width: "65%" }}>
+                <p style={{ fontSize: "1.5vmax" }}>
                   Excellence in work is a cornerstone of our commitment at
                   Arkco. We strive to consistently deliver outstanding results,
                   combining expertise, innovation, and dedication in every
@@ -439,7 +527,7 @@ const Home = () => {
           </div>
           <div
             className="flex-item-right scrollFade"
-            style="flex: 70%; padding-top: 10%"
+            style={{ flex: "70%", paddingTop: "10%" }}
           >
             <div className="project-wrapper">
               <div className="project-around">
@@ -451,7 +539,10 @@ const Home = () => {
                     careerists was a crucial aspect in the meticulous design of
                     this space.
                   </h3>
-                  <img
+                  <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
                     loading="lazy"
                     id="mainPhoto1"
                     src="/img/712w125/1.JPG"
@@ -469,7 +560,10 @@ const Home = () => {
                     operation of this space, harmoniously embodying the beauty
                     of beliefs in every corner.
                   </h3>
-                  <img
+                  <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
                     loading="lazy"
                     id="#mainPhoto2"
                     src="/img/130CutterMill/1.png"
@@ -488,7 +582,10 @@ const Home = () => {
                     effortlessly cater to the visions of brides and various
                     events.
                   </h3>
-                  <img
+                  <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
                     loading="lazy"
                     id="#mainPhoto3"
                     src="/img/21OldWestbury/1.jpg"
@@ -506,7 +603,10 @@ const Home = () => {
                     invite guests to experience each room in a distinct manner,
                     transporting them to a space that is truly like no other.
                   </h3>
-                  <img
+                  <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
                     loading="lazy"
                     id="#mainPhoto4"
                     src="/img/gotham/1.JPEG"
@@ -520,16 +620,22 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div id="contact" className="flex-container" style="flex: 30%">
+        <div id="contact" className="flex-container" style={{ flex: "30%" }}>
           <div
             id="scroll-3"
             className="flex-item-left scrollFade"
-            style="flex: 30%"
+            style={{ flex: "30%" }}
           >
-            <div id="contact-header-desktop" style="position: relative;">
-              <div style="transform: rotate(-90deg);">
-                <h1 style="font-size: 5vmax">CONTACT</h1>
-                <h1 style="font-size: 1.5vmax; margin: -15px 0; cursor: pointer">
+            <div id="contact-header-desktop" style={{ position: "relative" }}>
+              <div style={{ transform: "rotate(-90deg)" }}>
+                <h1 style={{ fontSize: "5vmax" }}>CONTACT</h1>
+                <h1
+                  style={{
+                    fontSize: "1.5vmax",
+                    margin: "-15px 0",
+                    cursor: "pointer",
+                  }}
+                >
                   <b
                     onClick={() => {
                       window.location.href = "tel:212-547-9000";
@@ -546,7 +652,7 @@ const Home = () => {
                     EMAIL US
                   </b>
                 </h1>
-                <p style="font-size: .75vmax; width: 20vmax">
+                <p style={{ fontSize: ".75vmax", width: "20vmax" }}>
                   We invite you to learn more about us and discover the vast
                   ways that we can assist you. We look forward to the
                   opportunity to discuss potential collaborations and build
@@ -554,13 +660,13 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div id="contact-header-mobile" style="margin-top: 15vh">
-              <h1 style="font-size: 6vmax">CONTACT</h1>
-              <h1 style="font-size: 2vmax; ">
+            <div id="contact-header-mobile" style={{ marginTop: "15vh" }}>
+              <h1 style={{ fontSize: "6vmax" }}>CONTACT</h1>
+              <h1 style={{ fontSize: "2vmax" }}>
                 CALL US <br /> EMAIL US
               </h1>
-              <div style=" margin: auto; width: 65%">
-                <p style="font-size: 1.5vmax; ">
+              <div style={{ margin: "auto", width: "65%" }}>
+                <p style={{ fontSize: "1.5vmax" }}>
                   We invite you to learn more about us and discover the vast
                   ways that we can assist you. We look forward to the
                   opportunity to discuss potential collaborations and build
@@ -569,7 +675,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="flex-item-right scrollFade" style="flex: 70%">
+          <div className="flex-item-right scrollFade" style={{ flex: "70%" }}>
             <div>
               <form
                 className="form contact"
@@ -583,31 +689,64 @@ const Home = () => {
                   value="https://www.arkco.nyc"
                 />
                 <input type="hidden" name="_captcha" value="true" />
-                <input type="text" name="_honey" style="display:none" />
+                <input type="text" name="_honey" style={{ display: "none" }} />
 
-                <img
+                <Image
+                  width={0}
+                  height={0}
+                  sizes="100vw"
                   loading="lazy"
                   src="/img/pencil.png"
-                  style="position: absolute; left: -125px; height: 100%; rotate: 2deg; -webkit-filter: drop-shadow(5px 5px 5px #222); filter: drop-shadow(5px 5px 5px #222);"
+                  style={{
+                    width: "auto",
+                    position: "absolute",
+                    left: "-125px",
+                    height: "100%",
+                    rotate: "2deg",
+                    WebkitFilter: "drop-shadow(5px 5px 5px #222)",
+                    filter: "drop-shadow(5px 5px 5px #222)",
+                  }}
                   draggable="false"
                   alt="project"
                 />
-                <img
+                <Image
+                  width={0}
+                  height={0}
+                  sizes="100vw"
                   loading="lazy"
                   className="clipboard"
                   src="/img/clipboard.png"
                   draggable="false"
-                  style="position:absolute; width: 40%; top: -15%; left: 0; right: 0; margin: auto"
+                  style={{
+                    position: "absolute",
+                    width: "40%",
+                    height: "auto",
+                    top: "-15%",
+                    left: "0",
+                    right: "0",
+                    margin: "auto",
+                  }}
                   alt="project"
                 />
                 <div
                   className="contact-top"
-                  style="display: flex; flex-direction: row; justify-content: space-between; position: relative; z-index: 90"
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                    position: "relative",
+                    zIndex: "90",
+                  }}
                 >
                   <h2>CONTACT US</h2>
                   <h2
                     id="joinform"
-                    style="border: none; text-align: right; color: black; cursor: pointer"
+                    style={{
+                      border: "none",
+                      textAlign: "right",
+                      color: "black",
+                      cursor: "pointer",
+                    }}
                   >
                     JOIN US
                   </h2>
@@ -637,7 +776,11 @@ const Home = () => {
                 <button
                   type="submit"
                   className="button"
-                  style="position: absolute; right: 10%; transform: scale(.8)"
+                  style={{
+                    position: "absolute",
+                    right: "10%",
+                    transform: "scale(.8)",
+                  }}
                 >
                   Send Message
                 </button>
@@ -679,39 +822,73 @@ const Home = () => {
                   value="https://www.aapc.nyc"
                 />
                 <input type="hidden" name="_captcha" value="true" />
-                <input type="text" name="_honey" style="display:none" />
+                <input type="text" name="_honey" style={{ display: "none" }} />
                 <input
                   type="hidden"
                   name="_subject"
                   value="ArkCo - Job Application Submission"
                 />
 
-                <img
+                <Image
+                  width={0}
+                  height={0}
+                  sizes="100vw"
                   loading="lazy"
                   src="/img/pencil.png"
-                  style="position: absolute; left: -125px; height: 100%; rotate: 2deg; -webkit-filter: drop-shadow(5px 5px 5px #222); filter: drop-shadow(5px 5px 5px #222);"
+                  style={{
+                    width: "auto",
+                    height: "auto",
+                    position: "absolute",
+                    left: "-125px",
+                    height: "100%",
+                    rotate: "2deg",
+                    WebkitFilter: "drop-shadow(5px 5px 5px #222)",
+                    filter: "drop-shadow(5px 5px 5px #222)",
+                  }}
                   draggable="false"
                   alt="project"
                 />
-                <img
+               <Image
+                width={0}
+                height={0}
+                sizes="100vw"
                   loading="lazy"
                   className="clipboard"
                   src="/img/clipboard.png"
                   draggable="false"
-                  style="position:absolute; width: 40%; top: -15%; left: 0; right: 0; margin: auto"
+                  style={{
+                    position: "absolute",
+                    width: "40%",
+                    height: "auto",
+                    top: "-15%",
+                    left: "0",
+                    right: "0",
+                    margin: "auto",
+                  }}
                   alt="project"
                 />
                 <div
                   className="contact-top"
-                  style="display: flex; flex-direction: row; justify-content: space-between; position: relative; z-index: 90"
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                    position: "relative",
+                    zIndex: "90",
+                  }}
                 >
                   <h2
                     id="contactform"
-                    style="border: none; text-align: left; color: black; cursor: pointer"
+                    style={{
+                      border: "none",
+                      textAlign: "left",
+                      color: "black",
+                      cursor: "pointer",
+                    }}
                   >
                     CONTACT US
                   </h2>
-                  <h2 style="text-align: right">JOIN US</h2>
+                  <h2 style={{ textAlign: "right" }}>JOIN US</h2>
                 </div>
                 <p type="NAME:">
                   <input placeholder="Write your name here..." required />
@@ -738,7 +915,11 @@ const Home = () => {
                 <button
                   type="submit"
                   className="button"
-                  style="position: absolute; right: 10%; transform: scale(.8)"
+                  style={{
+                    position: "absolute",
+                    right: "10%",
+                    transform: "scale(.8)",
+                  }}
                 >
                   Apply
                 </button>

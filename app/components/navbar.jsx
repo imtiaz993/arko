@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -31,7 +32,10 @@ const Navbar = () => {
         </li>
         <li className="logo">
           <Link href="/">
-            <img
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
               loading="lazy"
               src="/img/arkco_logo.png"
               className="logo-img"

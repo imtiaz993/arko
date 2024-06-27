@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Navbar from "app/components/navbar";
 import Footer from "app/components/footer";
 import "../../../public/css/style.css";
@@ -14,28 +15,46 @@ const Projects = () => {
   return (
     <div>
       <Navbar />
-      <div id="projects" className="flex-container" style="margin-bottom: 10%;">
+      <div
+        id="projects"
+        className="flex-container"
+        style={{ marginBottom: "10%" }}
+      >
         <div
           id="scroll-1"
           className="flex-item-left scrollFade"
-          style="flex: 30%"
+          style={{ flex: "30%" }}
         >
           <h1
             id="scroll-arkco-1"
-            style="position: fixed; writing-mode: vertical-lr; font-size: 6vmax; color: #F7931E; transform: rotate(180deg); left: 5%; top:26%"
+            style={{
+              position: "fixed",
+              writingMode: "vertical-lr",
+              fontSize: "6vmax",
+              color: "#F7931E",
+              transform: "rotate(180deg)",
+              left: "5%",
+              top: "26%",
+            }}
           >
             ARKCO
           </h1>
           <div
             id="project-header-desktop"
-            style="position: relative; margin-top: 65%"
+            style={{ position: "relative", marginTop: "65%" }}
           >
-            <div style="transform: rotate(-90deg);">
-              <h1 style="font-size: 5vmax">PROJECTS</h1>
-              <h1 style="font-size: 1.5vmax; margin: -15px 0; text-transform: uppercase">
+            <div style={{ transform: "rotate(-90deg)" }}>
+              <h1 style={{ fontSize: "5vmax" }}>PROJECTS</h1>
+              <h1
+                style={{
+                  fontSize: "1.5vmax",
+                  margin: "-15px 0",
+                  textTransform: "uppercase",
+                }}
+              >
                 excellence <br /> in work
               </h1>
-              <p style="font-size: .75vmax; width: 20vmax">
+              <p style={{ fontSize: ".75vmax", width: "20vmax" }}>
                 Excellence in work is a cornerstone of our commitment at Arkco.
                 We strive to consistently deliver outstanding results, combining
                 expertise, innovation, and dedication in every project we
@@ -43,13 +62,13 @@ const Projects = () => {
               </p>
             </div>
           </div>
-          <div id="project-header-mobile" style="margin-top: 10vh">
-            <h1 style="font-size: 6vmax">PROJECTS</h1>
-            <h1 style="font-size: 2vmax; text-transform: uppercase">
+          <div id="project-header-mobile" style={{ marginTop: "10vh" }}>
+            <h1 style={{ fontSize: "6vmax" }}>PROJECTS</h1>
+            <h1 style={{ fontSize: "2vmax", textTransform: "uppercase" }}>
               excellence <br /> in work
             </h1>
-            <div style=" margin: auto; width: 65%">
-              <p style="font-size: 1.5vmax; ">
+            <div style={{ margin: "auto", width: "65%" }}>
+              <p style={{ fontSize: "1.5vmax" }}>
                 Excellence in work is a cornerstone of our commitment at Arkco.
                 We strive to consistently deliver outstanding results, combining
                 expertise, innovation, and dedication in every project we
@@ -58,41 +77,71 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="flex-item-right scrollFade" style="flex: 70%">
+        <div className="flex-item-right scrollFade" style={{ flex: "70%" }}>
           <div className="container">
             <div className="card-column column-0">
               <div className="card card-color-0">
                 <div className="border"></div>
-                <img src="/img/gallery/boxinggym.png" />
+                <Image
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  src="/img/gallery/boxinggym.png"
+                />
                 <h1>60 w 125 [Boxing Gym]</h1>
               </div>
               <div className="card card-color-2">
                 <div className="border"></div>
-                <img src="/img/21OldWestbury/3.jpg" />
+                <Image
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  src="/img/21OldWestbury/3.jpg"
+                />
                 <h1>21 Old Westbury [Wedding hall]</h1>
               </div>
             </div>
             <div className="card-column column-1">
               <div className="card card-color-1">
                 <div className="border"></div>
-                <img src="/img/gallery/krico.png" />
+                <Image
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  src="/img/gallery/krico.png"
+                />
                 <h1>772 9th [Krico]</h1>
               </div>
               <div className="card card-color-3">
                 <div className="border"></div>
-                <img src="/img/712w125/3.JPG" />
+                <Image
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  src="/img/712w125/3.JPG"
+                />
                 <h1>712 West 125th Street</h1>
               </div>
             </div>
             <div className="card-column column-2">
               <div className="card card-color-1">
                 <div className="border"></div>
-                <img src="/img/130CutterMill/1.png" />
+                <Image
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  src="/img/130CutterMill/1.png"
+                />
                 <h1>130 Cutter Mill [Temple]</h1>
               </div>
               <div className="card card-color-3">
                 <div className="border"></div>
-                <img src="/img/gotham/1.JPEG" />
+                <Image
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  src="/img/gotham/1.JPEG"
+                />
                 <h1>1356 Broadway [Gotham Hall]</h1>
               </div>
             </div>
@@ -106,7 +155,13 @@ const Projects = () => {
             <span className="x-1"></span>
             <span className="x-2"></span>
           </a>
-          <img id="open-content-image" src="" />
+          <Image
+            width={0}
+            height={0}
+            sizes="100vw"
+            id="open-content-image"
+            src=""
+          />
           <div className="text-inside" id="open-content-text"></div>
         </div>
       </div>
