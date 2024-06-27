@@ -11,7 +11,57 @@ export const metadata = {
   keywords: "Construction, ArkCo, Building, Design",
 };
 
-const BlogDetails = () => {
+const BlogDetails = async () => {
+  const BLOG_URL = "https://azark-blog-backend.onrender.com/api/posts";
+  let filteredPosts;
+
+  try {
+    const res = await fetch(BLOG_URL);
+    if (!res.ok) {
+      throw new Error(`${res.status}: ${res.statusText}`);
+    }
+
+    const data = await res.json();
+    filteredPosts = data
+      .reverse()
+      .filter((post) => post.categories.includes("bvs") && post.published);
+  } catch (e) {
+    if (e.data) {
+      return { status: e.status, data: e.data };
+    }
+  }
+
+  const createListItem = (item) => {
+    function rfc3986EncodeURIComponent(str) {
+      return encodeURIComponent(str).replace(/[!'()*]/g, escape);
+    }
+    if (item.categories.includes("arkco") && item.published === true) {
+      const date = new Date(item.updatedAt);
+      const formattedDate = `${date.getDate()} ${date.toLocaleString(
+        "default",
+        { month: "long" }
+      )} ${date.getFullYear()}`;
+      return (
+        <div
+          className="section"
+          // onClick={() =>
+          //   router.push(`/blog/${rfc3986EncodeURIComponent(post.identifier)}`)
+          // }
+        >
+          <div>
+            <img src={item.photo} alt={item.title} />
+            <h1>{item.title}</h1>
+            <div>
+              <h2>{item.author}</h2>
+              <h2>{formattedDate}</h2>
+            </div>
+            <p>{item.clincher}</p>
+          </div>
+        </div>
+      );
+    }
+  };
+
   return (
     <div>
       <Navbar />
@@ -74,7 +124,9 @@ const BlogDetails = () => {
           </div>
         </div>
         <div className="flex-item-right scrollFade" style={{ flex: "70%" }}>
-          <div id="blog-posts" className="container"></div>
+          <div id="blog-posts" className="container">
+            {filteredPosts.map((post) => createListItem(post))}
+          </div>
         </div>
       </div>
       <Footer />
@@ -101,66 +153,6 @@ gsap.to(".third", {
 });
 
 </script> */}
-      {/* <script>
-const BLOG_URL = 'https://azark-blog-backend.onrender.com/api/posts';
-
-async function customFetch() {
-  try {
-      const res = await fetch(BLOG_URL);
-      if (!res.ok) {
-          throw new Error(`${res.status} : ${res.statusText}`)
-      }
-
-      const json = await res.json();
-      return json;
-  } catch (err) {
-      console.error(err.message)
-  }
-}
-
-const createListItem = (item) => {
-
-  function rfc3986EncodeURIComponent (str) {
-      return encodeURIComponent(str).replace(/[!'()*]/g, escape);
-  }
-
-  if (item.categories.includes("arkco") && item.published === true) {
-      const date = new Date(item.updatedAt);
-      const formattedDate = date.getDate() +  " " + date.toLocaleString('default', { month: 'long' }) + " " + date.getFullYear()
-      return `
-      <div className="section" onclick="location.assign('blog-single.html?id=${rfc3986EncodeURIComponent(item.identifier)}');">
-          <div  onclick="location.assign('blog-single.html?id=${rfc3986EncodeURIComponent(item.identifier)}');">
-              <img src="${item.photo}"/>
-              <h1>${item.title}</h1>
-              <div>
-                  <h2>${item.author}</h2>
-                  <h2>${formattedDate}</h2>
-              </div>
-              <p>${item.clincher}</p>
-          </div>
-
-      </div>
-`
-  }
-}
-
-const getPosts = async () => {
-  const data = await customFetch();
-  const posts = data.reverse().map(posts => posts);
-  const listItems = posts.map(t => createListItem(t)).join("")
-
-  const insertBefore = (element, htmlString) => element.insertAdjacentHTML("afterbegin", htmlString);
-
-  const element = document.getElementById("blog-posts");
-
-  return insertBefore(element, `${listItems}`)
-}
-
-getPosts()
-
-
-</script>
- */}
     </div>
   );
 };
