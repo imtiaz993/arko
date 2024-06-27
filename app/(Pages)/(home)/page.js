@@ -11,12 +11,12 @@ import "../../../public/css/contact.css";
 import "../../../public/css/card-home.css";
 import "../../../public/css/about.css";
 
-export const metadata = {
-  title: "ARKCO | Home",
-  description:
-    "We strategically integrate our expertise in construction, and project management to offer seamless solutions.",
-  keywords: "Construction, ArkCo, Building, Design",
-};
+// export const metadata = {
+//   title: "ARKCO | Home",
+//   description:
+//     "We strategically integrate our expertise in construction, and project management to offer seamless solutions.",
+//   keywords: "Construction, ArkCo, Building, Design",
+// };
 
 const Home = () => {
   const router = useRouter();
