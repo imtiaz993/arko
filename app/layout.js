@@ -62,7 +62,6 @@ export default function RootLayout({ children }) {
       >
         {children}
         <Calendly />
-        <Script src="js/scrollfade-0.1.js" />
         <Script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" />
         <Script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js" />
       </body>
