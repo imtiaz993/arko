@@ -1,32 +1,47 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
   return (
     <nav>
       <ul>
         <li>
-          <Link href="/blog" className="item">
+          <Link
+            href="/blog"
+            className={`item ${pathname.includes("/blog") ? "active" : ""}`}
+          >
             BLOG
           </Link>
         </li>
         <li>
-          <Link href="/contact" className="item">
+          <Link
+            href="/contact"
+            className={`item ${pathname.includes("/contact") ? "active" : ""}`}
+          >
             CONTACT
           </Link>
         </li>
         <li>
-          <Link href="/projects" className="item">
+          <Link
+            href="/projects"
+            className={`item ${pathname.includes("/projects") ? "active" : ""}`}
+          >
             PROJECTS
           </Link>
         </li>
         <li>
-          <Link href="/services" className="item">
+          <Link
+            href="/services"
+            className={`item ${pathname.includes("/services") ? "active" : ""}`}
+          >
             SERVICES
           </Link>
         </li>
         <li>
-          <Link href="#" className="item active">
+          <Link href="#" className={`item ${pathname === "/" ? "active" : ""}`}>
             HOME
           </Link>
         </li>
