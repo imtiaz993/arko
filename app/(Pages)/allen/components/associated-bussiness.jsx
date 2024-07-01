@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 const AssociatedBussiness = () => {
@@ -19,9 +21,9 @@ const AssociatedBussiness = () => {
             height={0}
             sizes="100vw"
             id="aapc"
-            // onClick={() => {
-            //   window.location.href = "https://aapc.nyc";
-            // }}
+            onClick={() => {
+              window.location.href = "https://aapc.nyc";
+            }}
             src="/img/aapc.png"
             alt="aapc"
           />
@@ -30,9 +32,9 @@ const AssociatedBussiness = () => {
             height={0}
             sizes="100vw"
             id="bvs"
-            // onClick={() => {
-            //   window.location.href = "https://bvs.nyc";
-            // }}
+            onClick={() => {
+              window.location.href = "https://bvs.nyc";
+            }}
             src="/img/BVS%20White.png"
             alt="bvs"
           />
@@ -41,9 +43,9 @@ const AssociatedBussiness = () => {
             height={0}
             sizes="100vw"
             id="violerts"
-            // onClick={() => {
-            //   window.location.href = "https://www.violerts.com";
-            // }}
+            onClick={() => {
+              window.location.href = "https://www.violerts.com";
+            }}
             src="/img/Violerts%20Logo.png"
             alt="violerts"
           />
@@ -52,9 +54,9 @@ const AssociatedBussiness = () => {
             height={0}
             sizes="100vw"
             id="vps"
-            // onClick={() => {
-            //   window.location.href = "https://vps.nyc";
-            // }}
+            onClick={() => {
+              window.location.href = "https://vps.nyc";
+            }}
             src="/img/VPS_Logo.png"
             alt="vps"
           />

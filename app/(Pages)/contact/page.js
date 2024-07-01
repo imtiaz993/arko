@@ -25,30 +25,6 @@ const Contact = () => {
         <Form />
       </div>
       <Footer />
-
-      {/* <script>
-  var joinform = document.getElementById('joinform');
-  var contactform = document.getElementById('contactform');
-  var form = document.getElementById('form1');
-  var form2 = document.getElementById('form2');
-  joinform.onclick = function () {
-      form.style.display = 'none';
-      form2.style.display = 'block'
-  }
-  contactform.onclick = function () {
-      form2.style.display = 'none';
-      form.style.display = 'block'
-  }
-
-  var uploadField = document.getElementById("file");
-
-  uploadField.onchange = function() {
-      if(this.files[0].size > 2097152){
-          alert("File is too big!");
-          this.value = "";
-      };
-  };
-</script> */}
     </div>
   );
 };

@@ -1,3 +1,5 @@
+"use client";
+
 const SideScroll = () => {
   return (
     <>
@@ -31,17 +33,17 @@ const SideScroll = () => {
               }}
             >
               <b
-              // onClick={() => {
-              //   window.location.href = "tel:212-547-9000";
-              // }}
+                onClick={() => {
+                  window.location.href = "tel:212-547-9000";
+                }}
               >
                 CALL US
               </b>{" "}
               <br />{" "}
               <b
-              // onClick={() => {
-              //   window.location.href = "mailto:admin@arkco.nyc";
-              // }}
+                onClick={() => {
+                  window.location.href = "mailto:admin@arkco.nyc";
+                }}
               >
                 EMAIL US
               </b>
