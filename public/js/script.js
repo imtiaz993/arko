@@ -1,4 +1,4 @@
-var Books = (function() {
+export const Books = (function() {
 
     var $books = $( '#bk-list > li > div.bk-book' ), booksCount = $books.length;
 
@@ -84,7 +84,7 @@ var Books = (function() {
 
     return { init : init };
 
-})();
+});
 /* Modernizr 2.6.2 (Custom Build) | MIT & BSD
  * Build: https://modernizr.com/download/#-csstransforms3d-touch-shiv-cssclasses-prefixed-teststyles-testprop-testallprops-prefixes-domprefixes-load
  */

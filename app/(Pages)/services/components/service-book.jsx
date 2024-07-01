@@ -1,6 +1,14 @@
+"use client";
+
+import { useEffect } from "react";
 import Image from "next/image";
+// import { Books } from "@/public/js/script";
 
 const ServiceBook = () => {
+  useEffect(() => {
+    // Books.init();
+  }, []);
+
   return (
     <div className="flex-item-right scrollFade" style={{ flex: "70%" }}>
       <div className="main">

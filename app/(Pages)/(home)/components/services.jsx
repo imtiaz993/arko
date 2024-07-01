@@ -1,6 +1,14 @@
+"use client";
+
+import { useEffect } from "react";
 import Image from "next/image";
+// import { Books } from "@/public/js/script";
 
 const Services = () => {
+  useEffect(() => {
+    // Books.init();
+  }, []);
+
   return (
     <div id="services" className="flex-container">
       <div

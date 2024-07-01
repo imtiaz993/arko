@@ -29,14 +29,6 @@ const Services = () => {
         <ServiceBook />
       </div>
       <Footer />
-
-      {/* <script>
-  $(function () {
-
-      Books.init();
-
-  });
-</script> */}
     </div>
   );
 };

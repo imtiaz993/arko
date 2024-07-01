@@ -36,90 +36,7 @@ const Home = () => {
       </div>
       <Footer />
 
-      {/* <script type="text/javascript">
-  var image = document.getElementById("mainPhoto1");
-  var currentPos = 0;
-  var images = ["img/712w125/1.JPG", "img/712w125/2.JPG", "img/712w125/3.JPG", "img/712w125/4.JPG"]
-
-  function volgendefoto() {
-      if (++currentPos >= images.length)
-          currentPos = 0;
-
-      image.style.opacity = 0;
-      setTimeout(function () {
-          image.src = images[currentPos];
-
-          setTimeout(function () {
-              image.style.opacity = 1;
-          }, 500);
-      }, 950);
-  }
-
-  setInterval(volgendefoto, 5000);
-</script>
-<script type="text/javascript">
-  var image2 = document.getElementById("#mainPhoto2");
-  var currentPos2 = 0;
-  var images2 = ["img/130CutterMill/1.png", "img/130CutterMill/2.png", "img/130CutterMill/3.png", "img/130CutterMill/4.png", "img/130CutterMill/5.png", "img/130CutterMill/6.png", "img/130CutterMill/7.png", "img/130CutterMill/8.png", "img/130CutterMill/9.png"]
-
-  function volgendefoto2() {
-      if (++currentPos2 >= images2.length)
-          currentPos2 = 0;
-
-      image2.style.opacity = 0;
-      setTimeout(function () {
-          image2.src = images2[currentPos2];
-
-          setTimeout(function () {
-              image2.style.opacity = 1;
-          }, 500);
-      }, 950);
-  }
-
-  setInterval(volgendefoto2, 5000);
-</script>
-<script type="text/javascript">
-  var image3 = document.getElementById("#mainPhoto3");
-  var currentPos3 = 0;
-  var images3 = ["img/21OldWestbury/1.jpg", "img/21OldWestbury/2.jpg", "img/21OldWestbury/3.jpg", "img/21OldWestbury/4.jpg", "img/21OldWestbury/5.jpeg", "img/21OldWestbury/6.jpg", "img/21OldWestbury/7.jpeg", "img/21OldWestbury/8.jpeg", "img/21OldWestbury/9.jpg"]
-
-  function volgendefoto3() {
-      if (++currentPos3 >= images3.length)
-          currentPos3 = 0;
-
-      image3.style.opacity = 0;
-      setTimeout(function () {
-          image3.src = images3[currentPos3];
-
-          setTimeout(function () {
-              image3.style.opacity = 1;
-          }, 500);
-      }, 950);
-  }
-
-  setInterval(volgendefoto3, 5000);
-</script>
-<script type="text/javascript">
-  var image4 = document.getElementById("#mainPhoto4");
-  var currentPos4 = 0;
-  var images4 = ["img/gotham/1.JPEG", "img/gotham/2.JPEG", "img/gotham/3.JPEG", "img/gotham/4.JPEG", "img/gotham/5.JPEG", "img/gotham/6.JPEG", "img/gotham/7.JPEG", "img/gotham/8.JPEG", "img/gotham/9.JPEG"]
-
-  function volgendefoto4() {
-      if (++currentPos4 >= images4.length)
-          currentPos4 = 0;
-
-      image4.style.opacity = 0;
-      setTimeout(function () {
-          image4.src = images4[currentPos4];
-
-          setTimeout(function () {
-              image4.style.opacity = 1;
-          }, 500);
-      }, 950);
-  }
-
-  setInterval(volgendefoto4, 5000);
-</script>
+      {/* 
 <script>
 
   // Get all buttons with className="btn" inside the container
@@ -142,13 +59,6 @@ const Home = () => {
   }
 </script>
 
-<script>
-  $(function () {
-
-      Books.init();
-
-  });
-</script>
 
 <script>
   $(document).scroll(function () {
