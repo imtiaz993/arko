@@ -42,30 +42,6 @@ const BlogDetails = async ({ params }) => {
         <Detail item={post} />
       </div>
       <Footer />
-
-      {/* <script>
-    gsap.to(".first", {
-        duration: 1.5,
-        delay: 0.5,
-        top: "-100%",
-        ease: "expo.inOut",
-    });
-
-    gsap.to(".second", {
-        duration: 1.5,
-        delay: 0.6,
-        top: "-100%",
-        ease: "expo.inOut",
-    });
-
-    gsap.to(".third", {
-        duration: 1.5,
-        delay: 0.7,
-        top: "-100%",
-        ease: "expo.inOut",
-    });
-
-</script> */}
     </div>
   );
 };

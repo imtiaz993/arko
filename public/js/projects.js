@@ -187,26 +187,3 @@ function resize() {
 //Make this array based on the content for each project
 var paragraphText = ['Donec ullamcorper felis orci, ut tempor est lobortis sit amet. Aliquam laoreet orci vitae porttitor tempor. Morbi augue felis, viverra eu faucibus at, laoreet fringilla dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut fringilla dictum ipsum vestibulum blandit. Sed sagittis erat justo, ut porta orci suscipit a. Aenean sit amet sodales nisi, id bibendum felis. Nam dui tortor, bibendum a dui a, tincidunt tincidunt leo. Nulla tincidunt ex eu hendrerit tristique. Praesent aliquet dictum magna sit amet blandit. Sed lacinia ligula quam, at mollis enim mollis quis. Ut efficitur gravida justo sed eleifend. Maecenas ac purus lectus. Integer consectetur dolor velit, eget placerat diam sagittis vel.', '2', '3', '4', '5', '6', '7', '8', '9']
 //var paragraphText = '<p>Somebody once told me the world is gonna roll me. I ain\'t the sharpest tool in the shed. She was looking kind of dumb with her finger and her thumb in the shape of an "L" on her forehead. Well the years start coming and they don\'t stop coming. Fed to the rules and I hit the ground running. Didn\'t make sense not to live for fun. Your brain gets smart but your head gets dumb. So much to do, so much to see. So what\'s wrong with taking the back streets? You\'ll never know if you don\'t go. You\'ll never shine if you don\'t glow.</p><p>Hey now, you\'re an all-star, get your game on, go play. Hey now, you\'re a rock star, get the show on, get paid. And all that glitters is gold. Only shooting stars break the mold.</p><p>It\'s a cool place and they say it gets colder. You\'re bundled up now, wait till you get older. But the meteor men beg to differ. Judging by the hole in the satellite picture. The ice we skate is getting pretty thin. The water\'s getting warm so you might as well swim. My world\'s on fire, how about yours? That\'s the way I like it and I never get bored.</p>';
-
-
-/* OVERLAY */
-gsap.to(".first", {
-    duration: 1.5,
-    delay: 0.5,
-    top: "-100%",
-    ease: "expo.inOut",
-});
-
-gsap.to(".second", {
-    duration: 1.5,
-    delay: 0.6,
-    top: "-100%",
-    ease: "expo.inOut",
-});
-
-gsap.to(".third", {
-    duration: 1.5,
-    delay: 0.7,
-    top: "-100%",
-    ease: "expo.inOut",
-});
