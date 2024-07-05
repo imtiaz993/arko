@@ -1,9 +1,9 @@
+import dynamic from "next/dynamic";
 import Navbar from "app/components/navbar";
 import Footer from "app/components/footer";
 import SideScroll from "./components/side-scroll";
 import Topper from "./components/topper";
 import About from "./components/about";
-import Services from "./components/services";
 import Projects from "./components/projects";
 import Contact from "./components/contact";
 import "../../../public/css/style.css";
@@ -12,6 +12,10 @@ import "../../../public/css/colorFan.css";
 import "../../../public/css/contact.css";
 import "../../../public/css/card-home.css";
 import "../../../public/css/about.css";
+
+const Services = dynamic(() => import("./components/services"), {
+  ssr: false,
+});
 
 export const metadata = {
   title: "ARKCO | Home",
