@@ -41,7 +41,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link href="#" className={`item ${pathname === "/" ? "active" : ""}`}>
+          <Link href="/" className={`item ${pathname === "/" ? "active" : ""}`}>
             HOME
           </Link>
         </li>
