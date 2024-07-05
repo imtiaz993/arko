@@ -120,162 +120,218 @@ const ServiceBook = () => {
   ];
 
   return (
-    <div className="flex-item-right scrollFade" style={{ flex: "70%" }}>
-      <div className="main">
-        <ul id="bk-list" className="bk-list clearfix">
-          {booksState.map((bookState, index) => {
-            const totalPages = 10; // Assuming 10 pages; adjust as needed
-            return (
-              <li key={index} id={`book-${index}`}>
-                <div
-                  className={`bk-book book-1 ${
-                    bookState.opened
-                      ? "bk-viewinside"
-                      : bookState.flip
-                      ? "bk-viewback"
-                      : "bk-bookdefault"
-                  }`}
-                >
+    <div id="services" className="flex-container">
+      <div
+        id="scroll-1"
+        className="flex-item-left scrollFade"
+        style={{ flex: "30%" }}
+      >
+        <div id="services-header-desktop" style={{ position: "relative" }}>
+          <div style={{ transform: "rotate(-90deg)" }}>
+            <h1 style={{ fontSize: "5vmax" }}>SERVICES</h1>
+            <h1
+              style={{
+                fontSize: "1.5vmax",
+                margin: "-15px 0",
+                textTransform: "uppercase",
+              }}
+            >
+              Forging connections by building bridges across every industry gap
+            </h1>
+            <p style={{ fontSize: ".75vmax", width: "25vmax" }}>
+              In construction, we employ advanced methodologies to ensure
+              structural integrity, safety, and aesthetic appeal. Our demolition
+              services are carried out with precision, minimizing disruptions
+              and environmental impact. The project management aspect involves a
+              meticulous coordination of resources, timelines, and stakeholders
+              to facilitate a smooth workflow. By amalgamating these core
+              services, Arkco not only constructs physical structures but also
+              bridges that span the diverse challenges within the industry. This
+              integrated approach allows us to navigate complexities, enhance
+              communication, and deliver projects with a holistic understanding
+              of the entire lifecycle—from concept to completion.
+            </p>
+          </div>
+        </div>
+        <div id="services-header-mobile">
+          <h1 style={{ fontSize: "6vmax" }}>SERVICES</h1>
+          <h1 style={{ fontSize: "2vmax", textTransform: "uppercase" }}>
+            Forging connections by building bridges across every industry gap
+          </h1>
+          <div style={{ margin: "auto", width: "65%" }}>
+            <p style={{ fontSize: "1.5vmax" }}>
+              In construction, we employ advanced methodologies to ensure
+              structural integrity, safety, and aesthetic appeal. Our demolition
+              services are carried out with precision, minimizing disruptions
+              and environmental impact. The project management aspect involves a
+              meticulous coordination of resources, timelines, and stakeholders
+              to facilitate a smooth workflow. By amalgamating these core
+              services, Arkco not only constructs physical structures but also
+              bridges that span the diverse challenges within the industry. This
+              integrated approach allows us to navigate complexities, enhance
+              communication, and deliver projects with a holistic understanding
+              of the entire lifecycle—from concept to completion.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="flex-item-right scrollFade" style={{ flex: "70%" }}>
+        <div className="main">
+          <ul id="bk-list" className="bk-list clearfix">
+            {booksState.map((bookState, index) => {
+              const totalPages = 10; // Assuming 10 pages; adjust as needed
+              return (
+                <li key={index} id={`book-${index}`}>
                   <div
-                    className="bk-front bk-bookview"
-                    onClick={() => handleBookViewClick(index)}
-                    style={{ borderRadius: "0 20px 20px 0" }}
+                    className={`bk-book book-1 ${
+                      bookState.opened
+                        ? "bk-viewinside"
+                        : bookState.flip
+                        ? "bk-viewback"
+                        : "bk-bookdefault"
+                    }`}
                   >
                     <div
-                      className="book-cover"
+                      className="bk-front bk-bookview"
+                      onClick={() => handleBookViewClick(index)}
                       style={{ borderRadius: "0 20px 20px 0" }}
                     >
-                      <div className="book-spine-front"></div>
-                      <div className="band"></div>
-                      <h1
-                        className="book-title"
-                        style={{ color: "transparent", userSelect: "none" }}
-                        draggable="false"
+                      <div
+                        className="book-cover"
+                        style={{ borderRadius: "0 20px 20px 0" }}
                       >
-                        Our Services
-                      </h1>
-                      <div className="cardboard-front"></div>
-                      <Image
-                        width={0}
-                        height={0}
-                        sizes="100vw"
-                        loading="lazy"
-                        src="/img/logobook.png"
-                        className="book-cover-picture"
-                        alt="cover"
-                      />
+                        <div className="book-spine-front"></div>
+                        <div className="band"></div>
+                        <h1
+                          className="book-title"
+                          style={{ color: "transparent", userSelect: "none" }}
+                          draggable="false"
+                        >
+                          Our Services
+                        </h1>
+                        <div className="cardboard-front"></div>
+                        <Image
+                          width={0}
+                          height={0}
+                          sizes="100vw"
+                          loading="lazy"
+                          src="/img/logobook.png"
+                          className="book-cover-picture"
+                          alt="cover"
+                        />
+                      </div>
+                      <div
+                        className="bk-cover-back"
+                        style={{ borderRadius: "20px 0 0 20px" }}
+                      >
+                        <div
+                          className="cover-back-cardboard"
+                          style={{ borderRadius: "20px 0 0 20px" }}
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div
+                      className="bk-page bk-bookview"
+                      style={{ borderRadius: "0 20px 20px 0" }}
+                      onClick={() => handleBookViewClick(index)}
+                    >
+                      <div className="bk-content bk-content-current">
+                        <h3 style={{ color: "black" }}>
+                          {bookContents[currentPage].title}
+                        </h3>
+                        <p style={{ fontFamily: "'Tenorite', sans-serif" }}>
+                          {bookContents[currentPage].content}
+                        </p>
+                      </div>
+                      {/* Display each page based on currentPage */}
+                      {totalPages > 1 && (
+                        <nav
+                          style={{
+                            position: "relative",
+                            zIndex: "10000",
+                            bottom: "0px",
+                            userSelect: "none",
+                          }}
+                        >
+                          <span
+                            className={`bk-page-prev ${
+                              bookState.currentPage === 0 ? "disabled" : ""
+                            }`}
+                            style={{ cursor: "pointer" }}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handlePrevPageClick(index);
+                            }}
+                          >
+                            &lt;
+                          </span>
+                          <span
+                            className={`bk-page-next ${
+                              bookState.currentPage === totalPages - 1
+                                ? "disabled"
+                                : ""
+                            }`}
+                            style={{ cursor: "pointer" }}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleNextPageClick(index, totalPages);
+                            }}
+                          >
+                            &gt;
+                          </span>
+                        </nav>
+                      )}
+
+                      {/* Navigation */}
                     </div>
                     <div
-                      className="bk-cover-back"
+                      className="bk-back bk-bookback"
+                      onClick={() => handleBookBackClick(index)}
                       style={{ borderRadius: "20px 0 0 20px" }}
                     >
                       <div
-                        className="cover-back-cardboard"
-                        style={{ borderRadius: "20px 0 0 20px" }}
+                        style={{
+                          height: "100%",
+                          width: "10%",
+                          position: "absolute",
+                          background: "#222222",
+                          right: "0",
+                        }}
                       ></div>
-                    </div>
-                  </div>
-
-                  <div
-                    className="bk-page bk-bookview"
-                    style={{ borderRadius: "0 20px 20px 0" }}
-                    onClick={() => handleBookViewClick(index)}
-                  >
-                    <div className="bk-content bk-content-current">
-                      <h3 style={{ color: "black" }}>
-                        {bookContents[currentPage].title}
-                      </h3>
-                      <p style={{ fontFamily: "'Tenorite', sans-serif" }}>
-                        {bookContents[currentPage].content}
+                      <div className="back-cardboard"></div>
+                      <p className="back-text">
+                        FORGING CONNECTIONS BY BUILDING BRIDGES ACROSS EVERY
+                        INDUSTRY GAP
                       </p>
                     </div>
-                    {/* Display each page based on currentPage */}
-                    {totalPages > 1 && (
-                      <nav
-                        style={{
-                          position: "relative",
-                          zIndex: "10000",
-                          bottom: "0px",
-                          userSelect: "none",
-                        }}
+                    <div className="bk-right"></div>
+                    <div className="bk-left">
+                      <h2>
+                        <span style={{ fontWeight: "bold", color: "#000" }}>
+                          Our Services
+                        </span>
+                        <span>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01
+                        </span>
+                      </h2>
+                      <div className="spine-cardboard"></div>
+                      <button
+                        className="bk-bookback arrow"
+                        onClick={() => handleBookBackClick(index)}
                       >
-                        <span
-                          className={`bk-page-prev ${
-                            bookState.currentPage === 0 ? "disabled" : ""
-                          }`}
-                          style={{ cursor: "pointer" }}
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handlePrevPageClick(index);
-                          }}
-                        >
-                          &lt;
-                        </span>
-                        <span
-                          className={`bk-page-next ${
-                            bookState.currentPage === totalPages - 1
-                              ? "disabled"
-                              : ""
-                          }`}
-                          style={{ cursor: "pointer" }}
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNextPageClick(index, totalPages);
-                          }}
-                        >
-                          &gt;
-                        </span>
-                      </nav>
-                    )}
-
-                    {/* Navigation */}
+                        ➦
+                      </button>
+                    </div>
+                    <div className="bk-top"></div>
+                    <div className="bk-bottom"></div>
                   </div>
-                  <div
-                    className="bk-back bk-bookback"
-                    onClick={() => handleBookBackClick(index)}
-                    style={{ borderRadius: "20px 0 0 20px" }}
-                  >
-                    <div
-                      style={{
-                        height: "100%",
-                        width: "10%",
-                        position: "absolute",
-                        background: "#222222",
-                        right: "0",
-                      }}
-                    ></div>
-                    <div className="back-cardboard"></div>
-                    <p className="back-text">
-                      FORGING CONNECTIONS BY BUILDING BRIDGES ACROSS EVERY
-                      INDUSTRY GAP
-                    </p>
-                  </div>
-                  <div className="bk-right"></div>
-                  <div className="bk-left">
-                    <h2>
-                      <span style={{ fontWeight: "bold", color: "#000" }}>
-                        Our Services
-                      </span>
-                      <span>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01
-                      </span>
-                    </h2>
-                    <div className="spine-cardboard"></div>
-                    <button
-                      className="bk-bookback arrow"
-                      onClick={() => handleBookBackClick(index)}
-                    >
-                      ➦
-                    </button>
-                  </div>
-                  <div className="bk-top"></div>
-                  <div className="bk-bottom"></div>
-                </div>
-                <div className="bk-info"></div>
-              </li>
-            );
-          })}
-        </ul>
+                  <div className="bk-info"></div>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </div>
   );
