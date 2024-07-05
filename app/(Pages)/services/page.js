@@ -1,13 +1,17 @@
+import dynamic from "next/dynamic";
 import Navbar from "app/components/navbar";
 import Footer from "app/components/footer";
 import SideScroll from "./components/side-scroll";
-import ServiceBook from "./components/service-book";
 import "../../../public/css/style.css";
 import "../../../public/css/books.css";
 import "../../../public/css/colorFan.css";
 import "../../../public/css/contact.css";
 import "../../../public/css/card-home.css";
 import "../../../public/css/about.css";
+
+const ServiceBook = dynamic(() => import("./components/service-book"), {
+  ssr: false,
+});
 
 export const metadata = {
   title: "ARKCO | Services",
