@@ -75,7 +75,7 @@ body {
     /*padding-top: 225px;*/
 }
 
-.card {
+.projectCard {
     width: 100%;
     max-width: 340px;
     position: relative;
@@ -143,7 +143,7 @@ body {
 }
  */
 
-.card h1 {
+.projectCard h1 {
     position: relative;
     padding: 90% 0px 15px 0px;
     width: 100%;
@@ -153,7 +153,7 @@ body {
     -webkit-text-stroke-color: black;*/
 }
 
-.card > img {
+.projectCard > img {
     width: 92%;
     height: 80%;
     position: absolute;
@@ -262,7 +262,7 @@ body {
 ** Transitions
 */
 
-.card {
+.projectCard {
     transition: opacity 200ms linear 320ms, transform 200ms ease-out 320ms;
 }
 
@@ -270,17 +270,17 @@ body {
     transition: opacity 200ms linear, transform 200ms ease-out;
 }
 
-.card img {
+.projectCard img {
     transition: opacity 200ms linear 0ms, transform 200ms ease-in 0ms;
 }
 
-.card h1 {              /* 0% used to be 20% */
+.projectCard h1 {              /* 0% used to be 20% */
     transform: translate3d(0%, 0px, 0px);
     transition: opacity 200ms linear 120ms, transform 200ms ease-in 120ms;
     font-size: .75vmax;
 }
 
-/* Clicked card */
+/* Clicked projectCard */
 .card.clicked img {
     transform: translate3d(0px, -40px, 0px);
     opacity: 0;
@@ -320,7 +320,7 @@ body {
 */
 
 @media screen and (max-width: 850px) {
-    .card h1{
+    .projectCard h1{
         font-size: 2vmax;
     }
 }
@@ -330,7 +330,7 @@ body {
         width: 90%;
     }
 
-    .card {
+    .projectCard {
         margin-left: 10%;
     }
 

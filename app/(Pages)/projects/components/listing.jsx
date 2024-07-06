@@ -6,7 +6,7 @@ const Listing = () => {
       <div className="flex-item-right scrollFade" style={{ flex: "70%" }}>
         <div className="container">
           <div className="card-column column-0">
-            <div className="card card-color-0">
+            <div className="projectCard  card-color-0">
               <div className="border"></div>
               <Image
                 width={0}
@@ -16,7 +16,7 @@ const Listing = () => {
               />
               <h1>60 w 125 [Boxing Gym]</h1>
             </div>
-            <div className="card card-color-2">
+            <div className="projectCard  card-color-2">
               <div className="border"></div>
               <Image
                 width={0}
@@ -28,7 +28,7 @@ const Listing = () => {
             </div>
           </div>
           <div className="card-column column-1">
-            <div className="card card-color-1">
+            <div className="projectCard  card-color-1">
               <div className="border"></div>
               <Image
                 width={0}
@@ -38,7 +38,7 @@ const Listing = () => {
               />
               <h1>772 9th [Krico]</h1>
             </div>
-            <div className="card card-color-3">
+            <div className="projectCard  card-color-3">
               <div className="border"></div>
               <Image
                 width={0}
@@ -50,7 +50,7 @@ const Listing = () => {
             </div>
           </div>
           <div className="card-column column-2">
-            <div className="card card-color-1">
+            <div className="projectCard  card-color-1">
               <div className="border"></div>
               <Image
                 width={0}
@@ -60,7 +60,7 @@ const Listing = () => {
               />
               <h1>130 Cutter Mill [Temple]</h1>
             </div>
-            <div className="card card-color-3">
+            <div className="projectCard  card-color-3">
               <div className="border"></div>
               <Image
                 width={0}
