@@ -5,7 +5,7 @@ const Listing = () => {
     <>
       <div className="flex-item-right scrollFade" style={{ flex: "70%" }}>
         <div className="container">
-          <div className="card-column column-0">
+          <div className="projectCardColumn  column-0">
             <div className="projectCard  card-color-0">
               <div className="border"></div>
               <Image
@@ -27,7 +27,7 @@ const Listing = () => {
               <h1>21 Old Westbury [Wedding hall]</h1>
             </div>
           </div>
-          <div className="card-column column-1">
+          <div className="projectCardColumn  column-1">
             <div className="projectCard  card-color-1">
               <div className="border"></div>
               <Image
@@ -49,7 +49,7 @@ const Listing = () => {
               <h1>712 West 125th Street</h1>
             </div>
           </div>
-          <div className="card-column column-2">
+          <div className="projectCardColumn  column-2">
             <div className="projectCard  card-color-1">
               <div className="border"></div>
               <Image

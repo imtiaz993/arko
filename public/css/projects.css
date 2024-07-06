@@ -59,7 +59,7 @@ body {
 }
 
 /******************************** Cards *********************************/
-.card-column {
+.projectCardColumn  {
     width: 33%;
     float: left;
     padding: 4%;
@@ -326,7 +326,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .card-column {
+    .projectCardColumn  {
         width: 90%;
     }
 
