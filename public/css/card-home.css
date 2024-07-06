@@ -1,9 +1,9 @@
 .card-column {
-    width: 50%;
-    float: left;
-    padding: 8%;
-    box-sizing: border-box;
-    margin-top: 5vh;
+    width: 50% !important;
+    float: left !important;
+    padding: 8% !important;
+    box-sizing: border-box !important;
+    margin-top: 5vh !important;
 }
 
 .column-1 {
@@ -83,45 +83,45 @@
  */
 
 .card h1 {
-    position: relative;
-    padding: 130% 0px 15px 0px;
-    width: 100%;
-    font-size: .5vmax;
-    font-weight: normal;
+    position: relative !important;
+    padding: 130% 0px 15px 0px !important;
+    width: 100% !important;
+    font-size: .5vmax !important;
+    font-weight: normal !important;
     /*-webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;*/
 }
 
 .card > img {
-    width: 92%;
-    height: 80%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 4%;
-    object-fit: cover;
-    border-radius: 10px;
+    width: 92% !important;
+    height: 80% !important;
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
+    top: 4% !important;
+    object-fit: cover !important;
+    border-radius: 10px !important;
 }
 
 @media screen and (max-width: 600px) {
     .card-column {
-        width: 90%;
+        width: 90% !important;
     }
 
     .card {
-        margin-left: 10%;
+        margin-left: 10% !important;
     }
 
     .column-1 {
-        padding-top: 0px;
+        padding-top: 0px !important;
     }
     .column-2 {
-        padding-top: 0px;
+        padding-top: 0px !important;
     }
 
     .open-content img {
-        margin-top: 40px;
+        margin-top: 40px !important;
     }
 
 }

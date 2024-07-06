@@ -148,6 +148,7 @@ body {
     padding: 90% 0px 15px 0px;
     width: 100%;
     font-size: medium;
+    font-weight: 700 !important;
     /*-webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;*/
 }

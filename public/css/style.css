@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 
 body {
     background-image: radial-gradient(circle, #636465 10%, transparent 1%);
@@ -123,13 +127,13 @@ nav {
     z-index: 98;
 }
 
-ul {
+.main ul, nav ul {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
 }
 
-ul li {
+.main ul li, nav ul li {
     border: 1px solid;
     list-style: none;
     color: transparent;

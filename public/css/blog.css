@@ -51,6 +51,12 @@
 
 }
 
+
+#the-text img{
+    width: 100%;
+    padding: 5%;
+}
+
 @media (max-width: 768px) { /*breakpoint*/
     .container {
         flex-direction: column;
