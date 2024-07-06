@@ -13,7 +13,7 @@ const Team = () => {
             router.push("/allen");
           }}
           style={{ cursor: "pointer" }}
-          className="card card-color-0"
+          className="card aboutCard card-color-0"
         >
           <div className="border"></div>
           <Image
@@ -30,7 +30,7 @@ const Team = () => {
         </div>
       </div>
       <div className="card-column column-1">
-        <div className="card card-color-1">
+        <div className="card aboutCard card-color-1">
           <div className="border"></div>
           <Image
             width={0}
@@ -44,7 +44,7 @@ const Team = () => {
             <b>Pierre Tairouz</b> <br /> Design Team Director
           </h1>
         </div>
-        <div className="card card-color-1">
+        <div className="card aboutCard card-color-1">
           <div className="border"></div>
           <Image
             width={0}

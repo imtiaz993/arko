@@ -221,8 +221,8 @@
         bottom: -10%;
     }
 
-    .card h1 {
-        font-size: 1.5vmax;
+    .aboutCard h1 {
+        font-size: 1.5vmax !important;
     }
 }
 
@@ -232,8 +232,8 @@
         padding-right: 45%;
     }
 
-    .card h1 {
-        font-size: 2vmax;
+    .aboutCard h1 {
+        font-size: 2vmax !important;
     }
 
 }
