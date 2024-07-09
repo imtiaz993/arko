@@ -18,7 +18,14 @@ export const metadata = {
 
 const Contact = () => {
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        minHeight: "100vh",
+      }}
+    >
       <Navbar />
       <div id="contact" className="flex-container" style={{ flex: "30%" }}>
         <SideScroll />
