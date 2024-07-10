@@ -5,6 +5,7 @@ import Image from "next/image";
 // Component to display the service book
 const ServiceBook = () => {
   // Initial state for books: { opened: false, flip: false }
+  const [isAnimating, setIsAnimating] = useState(false);
   const [booksState, setBooksState] = useState([
     { opened: false, flip: false },
     // Add more books as needed
@@ -43,32 +44,40 @@ const ServiceBook = () => {
 
   // Function to go to the previous page
   const handlePrevPageClick = (index) => {
-    if (currentPage > 0) {
-      setCurrentPage((prevPage) => prevPage - 1);
-    }
-    setBooksState((prevState) =>
-      prevState.map((book, i) => {
-        if (i === index && book.currentPage > 0) {
-          return { ...book, currentPage: book.currentPage - 1 };
-        }
-        return book;
-      })
-    );
+    setIsAnimating(true);
+    setTimeout(() => {
+      setIsAnimating(false);
+      if (currentPage > 0) {
+        setCurrentPage((prevPage) => prevPage - 1);
+      }
+      setBooksState((prevState) =>
+        prevState.map((book, i) => {
+          if (i === index && book.currentPage > 0) {
+            return { ...book, currentPage: book.currentPage - 1 };
+          }
+          return book;
+        })
+      );
+    }, 200);
   };
 
   // Function to go to the next page
   const handleNextPageClick = (index, totalPages) => {
-    if (currentPage < bookContents.length - 1) {
-      setCurrentPage((prevPage) => prevPage + 1);
-    }
-    setBooksState((prevState) =>
-      prevState.map((book, i) => {
-        if (i === index && book.currentPage < totalPages - 1) {
-          return { ...book, currentPage: book.currentPage + 1 };
-        }
-        return book;
-      })
-    );
+    setIsAnimating(true);
+    setTimeout(() => {
+      setIsAnimating(false);
+      if (currentPage < bookContents.length - 1) {
+        setCurrentPage((prevPage) => prevPage + 1);
+      }
+      setBooksState((prevState) =>
+        prevState.map((book, i) => {
+          if (i === index && book.currentPage < totalPages - 1) {
+            return { ...book, currentPage: book.currentPage + 1 };
+          }
+          return book;
+        })
+      );
+    }, 200);
   };
 
   const bookContents = [
@@ -236,7 +245,11 @@ const ServiceBook = () => {
                       style={{ borderRadius: "0 20px 20px 0" }}
                       onClick={() => handleBookViewClick(index)}
                     >
-                      <div className="bk-content bk-content-current">
+                      <div
+                        className={`bk-content ${
+                          isAnimating ? "" : "bk-content-current"
+                        }`}
+                      >
                         <h3 style={{ color: "black" }}>
                           {bookContents[currentPage].title}
                         </h3>
