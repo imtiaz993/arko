@@ -130,7 +130,7 @@ const ServiceBook = () => {
   return (
     <div className="flex-item-right scrollFade" style={{ flex: "70%" }}>
       <div className="main">
-        <ul id="bk-list" className="bk-list clearfix">
+        <ul id="bk-list" className="bk-list clearfix" style={{ all: "revert" }}>
           {booksState.map((bookState, index) => {
             const totalPages = 10; // Assuming 10 pages; adjust as needed
             return (
